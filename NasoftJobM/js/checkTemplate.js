@@ -8,6 +8,31 @@ function CheckTemplate(html,data){
     /*面板对应的对账渠道*/
     this.id = data.checkChannel;
     this.target.find(".check-panel .panel-heading .check-describe").text(this.data.checkDescribe);
+    ( function () {
+        updateProgress.call(this);
+        updateButtons.call(this);
+        updateState.call(this);
+    }).call(this)
+    this.resetData = function(data){
+        this.data = data;
+        updateProgress.call(this);
+        updateButtons.call(this);
+        updateState.call(this);
+    }
+    function updateProgress(){
+        var progressDom = this.target.find(".check-panel .panel-body .progress-bar");
+        progressDom.css({width:this.data.progressNum+"%"});
+    }
+    /*修改按钮状态*/
+    function updateButtons(){
+        console.log("修改按钮状态");
+    }
+     /*修改状态*/
+     function updateState(){
+        var stateText = this.target.find(".check-panel .panel-body .check-foot .check-state mark");
+        stateText.text(this.data.stateCn);
+        stateText.addClass(this.defaults.stateClasses[this.data.checkState])
+    }
 }
 function BootRow(){
     var row = $("<div class='row'></div>");
@@ -42,8 +67,7 @@ function CheckLayout(data){
     this.init = function(){
         /*创建一行*/
       var row = new BootRow();
-      /*将此行加入行列表*/
-      this.rows.push(row);
+
       /*遍历接口数据*/
       $.each(data,function(i,o){
           /*o的数据就是每个面板的初始化数据*/
@@ -52,6 +76,8 @@ function CheckLayout(data){
         /*如果此行的成员以满，则将此行加入文档中，同时再创建一行替换变量*/
          if (row.childrenLength()===2){
              row.appendTo(that.target);
+             /*将此行加入行列表*/
+             that.rows.push(row);
              row = new BootRow();
          }
       });
@@ -61,14 +87,18 @@ function CheckLayout(data){
 CheckLayout.prototype.find = function(id){
     var rl = this.rows.length;
     for(var i = 0;i < this.rows.length;i++){
-        var row = rows[i];
+        var row =this. rows[i];
         var cl = row.children.length;
         for(var j = 0;j < cl;j++){
-            if(row.children[j] === id){
+            if(row.children[j].id === id){
                 return row.children[j];
             }
         }
     }
     return null;
+}
+CheckTemplate.prototype.defaults = {
+    stateClasses : ["un-check","checking","check-success","check-failure","check-reset"]
+
 }
 
