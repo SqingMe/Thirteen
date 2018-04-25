@@ -1,0 +1,4 @@
+public long incrementLinesInput()
+{
+    return parent.incrementLinesInputImpl();
+}

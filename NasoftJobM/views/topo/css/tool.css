@@ -1,0 +1,356 @@
+.icon-Transformation {
+	background: url('../images/Transformation.png') no-repeat center center;
+}
+
+.icon-input {
+	background: url('../images/input.png') no-repeat center center;
+}
+
+.icon-output {
+	background: url('../images/output.png') no-repeat center center;
+}
+
+.icon-connection {
+	background: url('../transformation/connection/database.png') no-repeat
+		center center;
+}
+/*******************************************************************************************/
+/*                                      锟斤拷锟酵硷拷甓拷锟�                                                                                                         */
+/*******************************************************************************************/
+.icon-Constant {
+	background: url('../transformation/step/Constant/Constant.png')
+		no-repeat center center;
+}
+
+.icon-GetFileNames {
+	background: url('../transformation/step/GetFileNames/GetFileNames.png')
+		no-repeat center center;
+}
+.icon-DetectLastRow {
+	background: url('../transformation/step/DetectLastRow/DetectLastRow.png')
+		no-repeat center center;
+}
+
+.icon-RuleExecutor {
+	background: url('../transformation/step/RuleExecutor/RuleExecutor.png')
+		no-repeat center center;
+}
+
+.icon-StringOperations {
+	background:
+		url('../transformation/step/StringOperations/StringOperations.png')
+		no-repeat center center;
+}
+
+.icon-FieldSplitter {
+	background:
+		url('../transformation/step/FieldSplitter/FieldSplitter.png')
+		no-repeat center center;
+}
+
+.icon-SetVariable {
+	background: url('../transformation/step/SetVariable/SetVariable.png')
+		no-repeat center center;
+}
+
+.icon-SelectValues {
+	background: url('../transformation/step/SelectValues/SelectValues.png')
+		no-repeat center center;
+}
+.icon-IfNull {
+	background: url('../transformation/step/IfNull/IfNull.png')
+     no-repeat center center;
+}
+
+
+.icon-SystemInfo {
+	background: url('../transformation/step/SystemInfo/SystemInfo.png')
+     no-repeat center center;
+}
+
+.icon-TextFileInput {
+	background:
+		url('../transformation/step/TextFileInput/TextFileInput.png')
+		no-repeat center center;
+}
+
+.icon-FixedInput {
+	background: url('../transformation/step/FixedInput/FixedInput.png')
+		no-repeat center center;
+}
+
+.icon-TextFileOutput {
+	background:
+		url('../transformation/step/TextFileOutput/TextFileOutput.png')
+		no-repeat center center;
+}
+
+.icon-TableInput {
+	background: url('../transformation/step/TableInput/TableInput.png')
+		no-repeat center center;
+}
+
+.icon-TableOutput {
+	background: url('../transformation/step/TableOutput/TableOutput.png')
+		no-repeat center center;
+}
+
+.icon-TableDiffPlugin {
+	background:
+		url('../transformation/step/TableDiffPlugin/TableDiffPlugin.png')
+		no-repeat center center;
+}
+
+
+
+.icon-ReplaceString {
+	background:
+		url('../transformation/step/ReplaceString/ReplaceString.png')
+		no-repeat center center;
+}
+
+.icon-ScriptValueMod {
+	background:
+		url('../transformation/step/ScriptValueMod/ScriptValueMod.png')
+		no-repeat center center;
+}
+
+.icon-FTP {
+	background: url('../job/entries/FTP/FTP.png') no-repeat center center;
+}
+.icon-UNZIP {
+	background: url('../job/entries/UNZIP/UNZIP.png') no-repeat center center;
+}
+.icon-EVAL_FILES_METRICS {
+	background: url('../job/entries/EVAL_FILES_METRICS/EVAL_FILES_METRICS.png') no-repeat center center;
+}
+
+.icon-CREATE_FILE {
+	background: url('../job/entries/CREATE_FILE/CREATE_FILE.png') no-repeat
+		center center;
+}
+
+.icon-CREATE_FOLDER {
+	background: url('../job/entries/CREATE_FOLDER/CREATE_FOLDER.png')
+		no-repeat center center;
+}
+
+.icon-SPECIAL {
+	background: url('../job/entries/SPECIAL/SPECIAL.png') no-repeat center
+		center;
+}
+
+.icon-SUCCESS {
+	background: url('../job/entries/SUCCESS/SUCCESS.png') no-repeat center
+		center;
+}
+
+.icon-TRANS {
+	background: url('../job/entries/TRANS/TRANS.png') no-repeat center
+		center;
+}
+
+.icon-ExecSQL {
+	background:
+		url('../transformation/step/ExecSQL/ExecSQL.png')
+		no-repeat center center;
+}
+
+.icon-JobExecutor {
+	background: url('../transformation/step/JobExecutor/JobExecutor.png')
+		no-repeat center center;
+}
+
+.icon-TransExecutor {
+	background:
+		url('../transformation/step/TransExecutor/TransExecutor.png')
+		no-repeat center center;
+}
+
+.icon-SQL {
+	background: url('../job/entries/SQL/SQL.png') no-repeat center center;
+}
+
+.icon-UserDefinedJavaClass {
+	background:
+		url('../transformation/step/UserDefinedJavaClass/UserDefinedJavaClass.png')
+		no-repeat center center;
+}
+
+.icon-DataGrid {
+	background: url('../transformation/step/DataGrid/DataGrid.png')
+		no-repeat center center;
+}
+
+.icon-GetVariable {
+	background: url('../transformation/step/GetVariable/GetVariable.png')
+		no-repeat center center;
+}
+
+.icon-Calculator {
+	background: url('../transformation/step/Calculator/Calculator.png')
+		no-repeat center center;
+}
+
+.icon-Abort {
+	background: url('../transformation/step/Abort/Abort.png') no-repeat
+		center center;
+}
+
+.icon-SwitchCase {
+	background: url('../transformation/step/SwitchCase/SwitchCase.png')
+		no-repeat center center;
+}
+
+.icon-ValueMapperToDb {
+	background:
+		url('../transformation/step/ValueMapperToDb/ValueMapperToDb.png')
+		no-repeat center center;
+}
+
+.icon-DBLookup {
+	background: url('../transformation/step/DBLookup/DBLookup.png')
+		no-repeat center center;
+}
+
+.icon-StringCut {
+	background: url('../transformation/step/StringCut/StringCut.png')
+		no-repeat center center;
+}
+
+.icon-SeqFileInputStep {
+	background:
+		url('../transformation/step/SeqFileInputStep/SeqFileInputStep.png')
+		no-repeat center center;
+}
+
+.icon-Update {
+	background: url('../transformation/step/Update/Update.png') no-repeat
+		center center;
+}
+
+.icon-Dummy {
+	background: url('../transformation/step/Dummy/Dummy.png') no-repeat
+		center center;
+}
+
+.icon-Sequence {
+	background: url('../transformation/step/Sequence/Sequence.png')
+		no-repeat center center;
+}
+
+.icon-InsertUpdate {
+	background: url('../transformation/step/InsertUpdate/InsertUpdate.png')
+		no-repeat center center;
+}
+
+.icon-Delete {
+	background: url('../transformation/step/Delete/Delete.png') no-repeat
+		center center;
+}
+
+.icon-SET_VARIABLES {
+	background: url('../job/entries/SET_VARIABLES/SET_VARIABLES.png')
+		no-repeat center center;
+}
+
+.icon-DELAY {
+	background: url('../job/entries/DELAY/DELAY.png') no-repeat center
+		center;
+}
+
+.icon-SIMPLE_EVAL {
+	background: url('../job/entries/SIMPLE_EVAL/SIMPLE_EVAL.png') no-repeat
+		center center;
+}
+
+.icon-ABORT {
+	background: url('../job/entries/ABORT/ABORT.png') no-repeat center
+		center;
+}
+
+.icon-WRITE_TO_LOG {
+	background: url('../job/entries/WRITE_TO_LOG/WRITE_TO_LOG.png')
+		no-repeat center center;
+}
+
+.icon-JOB {
+	background: url('../job/entries/JOB/JOB.png') no-repeat center center;
+}
+
+.icon-FILE_EXISTS {
+	background: url('../job/entries/FILE_EXISTS/FILE_EXISTS.png') no-repeat
+		center center;
+}
+.icon-EVAL_TABLE_CONTENT {
+	background: url('../job/entries/EVAL_TABLE_CONTENT/EVAL_TABLE_CONTENT.png') no-repeat
+		center center;
+}
+/*******************************************************************************************/
+/*                                 锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷图锟疥定锟斤拷                                                                                                        */
+/*******************************************************************************************/
+.toolbar-icon-run {
+	background: url('../images/run.png') no-repeat center center;
+}
+
+.toolbar-icon-pause {
+	background: url('../images/pause.png') no-repeat center center;
+}
+
+.toolbar-icon-stop {
+	background: url('../images/stop.png') no-repeat center center;
+}
+
+.toolbar-icon-preview {
+	background: url('../images/preview.png') no-repeat center center;
+}
+
+.toolbar-icon-debug {
+	background: url('../images/debug.png') no-repeat center center;
+}
+
+.toolbar-icon-replay {
+	background: url('../images/replay.png') no-repeat center center;
+}
+
+.toolbar-icon-check {
+	background: url('../images/check.png') no-repeat center center;
+}
+
+.toolbar-icon-impact {
+	background: url('../images/impact.png') no-repeat center center;
+}
+
+.toolbar-icon-SQLbutton {
+	background: url('../images/SQLbutton.png') no-repeat center center;
+}
+
+.toolbar-icon-explore {
+	background: url('../images/exploredb.png') no-repeat center center;
+}
+
+.toolbar-icon-showResult {
+	background: url('../images/show-results.png') no-repeat center center;
+}
+/*******************************************************************************************/
+/*                                 锟斤拷锟斤拷锟芥工锟斤拷锟斤拷图锟疥定锟斤拷                                                                                                    */
+/*******************************************************************************************/
+.toolbar-icon-new {
+	background: url('../images/new.png') no-repeat center center;
+}
+
+.toolbar-icon-open {
+	background: url('../images/open.png') no-repeat center center;
+}
+
+.toolbar-icon-exploreRepo {
+	background: url('../images/exploreRepo.png') no-repeat center center;
+}
+
+.toolbar-icon-save {
+	background: url('../images/save.png') no-repeat center center;
+}
+
+.toolbar-icon-saveas {
+	background: url('../images/saveas.png') no-repeat center center;
+}

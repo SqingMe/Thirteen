@@ -1,0 +1,4 @@
+public TransMeta getTransMeta()
+{
+    return parent.getTransMetaImpl();
+}

@@ -1,0 +1,4 @@
+public void logError(String s)
+{
+    parent.logErrorImpl(s);
+}

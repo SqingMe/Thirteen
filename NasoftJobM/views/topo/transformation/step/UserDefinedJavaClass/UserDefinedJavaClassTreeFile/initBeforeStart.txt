@@ -1,0 +1,4 @@
+public void initBeforeStart() throws KettleStepException
+{
+    parent.initBeforeStartImpl();
+}

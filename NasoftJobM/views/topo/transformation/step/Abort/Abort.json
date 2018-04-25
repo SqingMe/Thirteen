@@ -1,0 +1,25 @@
+{
+	"name": "",
+	"type": "Abort",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"row_threshold": 0,
+	"message": null,
+	"always_log_rows": "Y",
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 430,
+		"yloc": 193,
+		"draw": "Y"
+	}
+}

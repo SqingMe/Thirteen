@@ -1,0 +1,12 @@
+{
+	"name": "",
+	"description": null,
+	"type": "DELAY",
+	"maximumTimeout": null,
+	"scaletime": 0,
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 285,
+	"yloc": 232
+}

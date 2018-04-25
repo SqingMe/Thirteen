@@ -1,0 +1,4 @@
+public long getLinesSkipped()
+{
+    return parent.getLinesSkippedImpl();
+}

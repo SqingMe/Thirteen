@@ -1,0 +1,61 @@
+<div style="margin: 2px;">
+	<label>连接名称:</label><br> <input class="easyui-textbox" id='name'
+		style="width: 523px;">
+</div>
+<div id="ordinary_west"
+	style="overflow: auto; float: left; width: 50%; height: 290px">
+	<label>连接类型:</label><br>
+	<div id="con_type"></div>
+</div>
+<div id="ordinary_east" style="float: left; width: 50%;">
+	<form style="display: none;" id="DB2">
+		<fieldset style="border: 1px solid #ccc; height: 275px; width: 250px">
+			<legend>设置</legend>
+			<input type="hidden" name="type" value="DB2"> <label>主机名:</label><br>
+			<input class="easyui-textbox server" name='server'><br>
+			<label>数据库名:</label><br>
+			<input class="easyui-textbox database" name='database'><br>
+			<label>端口号:</label><br>
+			<input class="easyui-textbox port" value="50000" name='port'><br>
+			<label>用户名:</label><br>
+			<input class="easyui-textbox username" name='username'><br>
+			<label>密码:</label><br>
+			<input class="easyui-textbox password" name='password'
+				type="password"><br>
+		</fieldset>
+	</form>
+
+	<form style="display: none;" id="MYSQL">
+		<fieldset style="border: 1px solid #ccc; height: 275px; width: 250px">
+			<legend>设置</legend>
+			<input type="hidden" name="type" value="MYSQL"> <label>主机名:</label><br>
+			<input class="easyui-textbox server" name='server'><br>
+			<label>数据库名:</label><br>
+			<input class="easyui-textbox database" name='database'><br>
+			<label>端口号:</label><br> <input class="easyui-textbox port"
+				name='port' value="3306"><br> <label>用户名:</label><br>
+			<input class="easyui-textbox username" name='username'><br>
+			<label>密码:</label><br> <input class="easyui-textbox password"
+				name='password' type="password"><br>
+		</fieldset>
+	</form>
+	<form style="display: none;" id="ORACLE">
+		<fieldset style="border: 1px solid #ccc; height: 275px; width: 250px">
+			<legend>设置</legend>
+			<input type="hidden" name="type" value="ORACLE"> <label>主机名:</label><br>
+			<input class="easyui-textbox server" name='server'><br>
+			<label>数据库名:</label><br>
+			<input class="easyui-textbox database" name='database'><br>
+			<label>数据表空间:</label><br>
+			<input class="easyui-textbox dbTable" name='dbTable'><br>
+			<label>索引表空间:</label><br>
+			<input class="easyui-textbox indexTable" name='indexTable'><br>
+			<label>端口号:</label><br>
+			<input class="easyui-textbox port" name='port'><br> <label>用户名:</label><br>
+			<input class="easyui-textbox username" name='username'><br>
+			<label>密码:</label><br>
+			<input class="easyui-textbox password" name='password'
+				type="password"><br>
+		</fieldset>
+	</form>
+</div>

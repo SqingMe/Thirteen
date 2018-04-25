@@ -1,0 +1,4 @@
+public boolean isInitialising()
+{
+    return parent.isInitialisingImpl();
+}

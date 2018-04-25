@@ -1,0 +1,4 @@
+public void logBasic(String s)
+{
+    parent.logBasicImpl(s);
+}

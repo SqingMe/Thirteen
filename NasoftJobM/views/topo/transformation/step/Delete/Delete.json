@@ -1,0 +1,28 @@
+{
+	"name": "",
+	"type": "Delete",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"connection": "",
+	"commit": null,
+	"lookup": {
+		"schema": null,
+		"table": null
+	},
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 566,
+		"yloc": 141,
+		"draw": "Y"
+	}
+}

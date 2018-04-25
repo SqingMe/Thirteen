@@ -1,0 +1,4 @@
+public void setLinesUpdated(long newLinesUpdatedValue)
+{
+    parent.setLinesUpdatedImpl(newLinesUpdatedValue);
+}

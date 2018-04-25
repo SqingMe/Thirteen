@@ -1,0 +1,4 @@
+public boolean isStopped()
+{
+    return parent.isStoppedImpl();
+}

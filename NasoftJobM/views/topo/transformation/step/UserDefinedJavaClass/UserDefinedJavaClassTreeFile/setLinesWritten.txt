@@ -1,0 +1,4 @@
+public void setLinesWritten(long newLinesWrittenValue)
+{
+    parent.setLinesWrittenImpl(newLinesWrittenValue);
+}

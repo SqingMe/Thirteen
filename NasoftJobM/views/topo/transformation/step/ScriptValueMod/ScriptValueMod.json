@@ -1,0 +1,32 @@
+{
+	"name": "",
+	"type": "ScriptValueMod",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"compatible": "N",
+	"optimizationLevel": 9,
+	"jsScripts": {
+		"jsScript": {
+			"jsScript_type": 0,
+			"jsScript_name": "Script",
+			"jsScript_script": "//Script here\n\n"
+		}
+	},
+	"fields": "",
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 576,
+		"yloc": 400,
+		"draw": "Y"
+	}
+}

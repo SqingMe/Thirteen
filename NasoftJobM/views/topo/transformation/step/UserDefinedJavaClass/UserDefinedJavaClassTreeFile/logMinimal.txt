@@ -1,0 +1,4 @@
+public void logMinimal(String s)
+{
+    parent.logMinimalImpl(s);
+}

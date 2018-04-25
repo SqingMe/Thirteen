@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>甘肃农信对账开发平台-登录</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/login.css"/>
+    <link rel="stylesheet" type="text/css" href="css/animate-custom.css"/>
+    <script type="text/javascript" src="/NasoftJobM/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src='js/login.js'> </script>
+    <script type="text/javascript" src='js/fullscreen.js'> </script>
+</head>
+<script type="text/javascript">
+    /**
+     *激活enter按键
+     */
+    $(document).keydown(function(event){
+        if(event.keyCode === 122){
+            return false;
+        }
+        if(event.keyCode == 13){ //绑定回车
+            var username = $("#userName").val();
+            var password = $("#password").val();
+            if(!username.trim()){
+                $(".keeplogin").find("label").text("请输入用户名!");
+                $("#userName").focus();
+            }else if(!password.trim()){
+                $(".keeplogin").find("label").text("请输入密码!");
+                $("#password").focus();
+            }else{
+                $(".keeplogin").find("label").text("${sessionScope.userInfo.loginMessage}");
+                $("#login-submit").click(); //触发登录按钮
+            }
+        }
+    });
+
+    $(function(){
+        $("#userName").focus();
+        $(".keeplogin").find("label").text("${sessionScope.userInfo.loginMessage}");
+        $("#login-submit").click(function (){
+            var loginval=$("#loginform input");
+            var userName = loginval.eq(0).val();
+            setCookie('userName',userName,365);
+            $("#loginform").attr("action","<%=path %>/Login/login.do");
+            $("#loginform").submit();
+            $(".keeplogin").find("label").text("");
+            $("#login-submit").attr("value","正在登陆...");
+        });
+    });
+
+</script>
+<body onload="checkCookie();">
+<div class="container login">
+    <div id="container_demo" class="mydiv">
+        <div id="wrapper" class="animated bounceInDown">
+            <div id="login" class="animate form">
+                <form id="loginform" autocomplete="on" method="post">
+                    <h1>
+                        <span>甘肃农信对账开发平台</span>
+                    </h1>
+                    <p>
+                        <label for="userName" class="uname" data-icon="u"> 登录用户 </label>
+                        <input id="userName" name="userName" required="required"
+                               type="text" placeholder="username" value='admin' />
+                    </p>
+                    <p>
+                        <label for="password" class="youpasswd" data-icon="p">
+                            用户密码 </label> <input id="password" name="passWord" required="required"
+                                                 type="password" placeholder="password" value='123123' />
+                    </p>
+                    <p class="keeplogin">
+                        <label style="color: #fd0214; font-size: 30px; padding-left: 50px;"></label>
+                    </p>
+                    <p class="login button">
+                        <input id="login-submit" class="mylink" type="button" value="登陆" />
+                    </p>
+                    <p class="change_link">All rights reserved by nasoft.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

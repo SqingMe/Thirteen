@@ -1,0 +1,12 @@
+{
+	"name": "",
+	"description": null,
+	"type": "CREATE_FOLDER",
+	"foldername": null,
+	"fail_of_folder_exists": "Y",
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 305,
+	"yloc": 198
+}

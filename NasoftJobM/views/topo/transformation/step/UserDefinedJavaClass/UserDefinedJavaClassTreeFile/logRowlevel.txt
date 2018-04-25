@@ -1,0 +1,4 @@
+public void logRowlevel(String s)
+{
+    parent.logRowlevelImpl(s);
+}

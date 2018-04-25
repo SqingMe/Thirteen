@@ -1,0 +1,4 @@
+public void putRow(RowMetaInterface row, Object[] data) throws KettleStepException
+{
+    parent.putRowImpl(row, data);
+}

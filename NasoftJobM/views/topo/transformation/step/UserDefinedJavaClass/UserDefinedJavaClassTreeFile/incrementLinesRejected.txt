@@ -1,0 +1,4 @@
+public long incrementLinesRejected()
+{
+    return parent.incrementLinesRejectedImpl();
+}

@@ -1,0 +1,11 @@
+{
+	"hop": {
+		"from": "",
+		"to": "",
+		"from_nr": 0,
+		"to_nr": 0,
+		"enabled": "Y",
+		"evaluation": "Y",
+		"unconditional": "Y"
+	}
+}

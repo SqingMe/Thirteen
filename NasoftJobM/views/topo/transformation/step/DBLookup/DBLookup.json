@@ -1,0 +1,33 @@
+{
+	"name": "",
+	"type": "DBLookup",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"connection": null,
+	"cache": "N",
+	"cache_load_all": "N",
+	"cache_size": 0,
+	"lookup": {
+		"schema": null,
+		"table": null,
+		"orderby": null,
+		"fail_on_multiple": "N",
+		"eat_row_on_failure": "N"
+	},
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 433,
+		"yloc": 171,
+		"draw": "Y"
+	}
+}

@@ -1,0 +1,4 @@
+public boolean isDistributed()
+{
+    return parent.isDistributedImpl();
+}

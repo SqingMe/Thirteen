@@ -1,0 +1,4 @@
+public int rowsetInputSize()
+{
+    return parent.rowsetInputSizeImpl();
+}

@@ -1,0 +1,22 @@
+{
+		"name" : "计算文件大小或个数",
+		"description" : null,
+		"type" : "EVAL_FILES_METRICS",
+		"result_filenames_wildcard" : null,
+		"Result_field_file" : null,
+		"Result_field_wildcard" : null,
+		"Result_field_includesubfolders" : null,
+		"fields" : "\n      ",
+		"comparevalue" : null,
+		"minvalue" : null,
+		"maxvalue" : null,
+		"successnumbercondition" : "greater",
+		"source_files" : "files",
+		"evaluation_type" : "size",
+		"scale" : "bytes",
+		"parallel" : "N",
+		"draw" : "Y",
+		"nr" : 0,
+		"xloc" : 423,
+		"yloc" : 160
+	}

@@ -1,0 +1,4 @@
+public void setErrors(long errors)
+{
+    parent.setErrorsImpl(errors);
+}

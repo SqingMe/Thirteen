@@ -1,0 +1,99 @@
+/*****************************************************
+*header
+*******************************************************/
+#menu_panel {
+	background: #000000;
+}
+
+#menu_panel .l-btn {
+	color: #ffffff;
+	border: 0px solid #ccc;
+	text-decoration: none;
+	display: inline;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	cursor: default;
+	outline: none;
+	text-align: center;
+	vertical-align: middle;
+	line-height: normal;
+	padding-top: 10px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#menu_panel
+.l-btn-plain {
+	border-width: 0;
+	padding: 0px;
+}
+
+#menu_panel .l-btn-plain:hover {
+	background: #ffffff;
+	color: #000000;
+	height: 29px;
+	padding-top: 3px;
+	padding-bottom: 10px;
+	margin-top: 3px;
+}
+
+#helpmenu .menu {
+	background-color: #000000;
+	border-color: #D3D3D3;
+	color: #444;
+}
+
+#menu_panel
+.m-btn-plain-active, .s-btn-plain-active {
+	background: transparent;
+	padding: 0;
+	border-width: 0px;
+	border-style: solid;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+#step_tool
+.tree-node {
+	height: 18px;
+	white-space: nowrap;
+	cursor: pointer;
+	padding: 5px 0px 5px 0px;
+}
+
+#step_tool {
+	margin: 0;
+	padding: 4px;
+	list-style-type: none;
+}
+
+#project
+.tree-node {
+	height: 18px;
+	white-space: nowrap;
+	cursor: pointer;
+	padding: 5px 0px 5px 0px;
+}
+
+#project {
+	margin: 0;
+	padding: 4px;
+	list-style-type: none;
+}
+
+.no_project_flag {
+	position: absolute;
+	left: 46px;
+	top: 109px;
+	font-size: 1.1em;
+	color: rgb(140, 140, 162);
+	font-style: initial;
+	font-family: Times, TimesNR, 'New Century Schoolbook', Georgia,
+		'New York', serif;
+	font-weight: normal;
+}
+
+#ordinary_east .easyui-textbox {
+	width: 240px;
+}

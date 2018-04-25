@@ -1,0 +1,4 @@
+public long getLinesRead()
+{
+    return parent.getLinesReadImpl();
+}

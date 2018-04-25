@@ -1,0 +1,23 @@
+ {
+	"name": "",
+	"type": "GetVariable",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"fields": "\n    ",
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 426,
+		"yloc": 255,
+		"draw": "Y"
+	}
+}

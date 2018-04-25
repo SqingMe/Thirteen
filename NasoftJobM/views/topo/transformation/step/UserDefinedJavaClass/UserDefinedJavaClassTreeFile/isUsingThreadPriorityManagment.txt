@@ -1,0 +1,4 @@
+public boolean isUsingThreadPriorityManagment()
+{
+    return parent.isUsingThreadPriorityManagmentImpl();
+}

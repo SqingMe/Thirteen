@@ -1,0 +1,33 @@
+{
+	"name": "",
+	"type": "FixedInput",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"filename": null,
+	"line_width": 80,
+	"header": "Y",
+	"buffer_size": 50000,
+	"lazy_conversion": "Y",
+	"line_feed": "Y",
+	"parallel": "N",
+	"file_type": "NONE",
+	"encoding": null,
+	"add_to_result_filenames": "N",
+	"fields": "",
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 512,
+		"yloc": 304,
+		"draw": "Y"
+	}
+}

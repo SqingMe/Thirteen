@@ -1,0 +1,4 @@
+public void markStop()
+{
+    parent.markStopImpl();
+}

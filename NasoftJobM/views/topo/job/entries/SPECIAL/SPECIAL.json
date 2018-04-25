@@ -1,0 +1,20 @@
+ {
+	"name": "START",
+	"description": null,
+	"type": "SPECIAL",
+	"start": "Y",
+	"dummy": "N",
+	"repeat": "N",
+	"schedulerType": 0,
+	"intervalSeconds": 0,
+	"intervalMinutes": 60,
+	"hour": 12,
+	"minutes": 0,
+	"weekDay": 1,
+	"DayOfMonth": 1,
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 96,
+	"yloc": 224
+}

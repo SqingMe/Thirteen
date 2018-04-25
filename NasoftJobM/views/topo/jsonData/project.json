@@ -1,0 +1,51 @@
+[
+	{
+		"id": "12016819717175T",
+		"clickSign": 1,
+		"isSave": false,
+		"project_name": "e",
+		"file_path": "G:\\workspace\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\NasoftJob\\views\\topo\\ktrFile\\a\\ette",
+		"text": "e(转换)",
+		"state": "closed",
+		"children": [
+			{
+				"id": "o2016819T17175D",
+				"clickSign": 11,
+				"text": "DB连接",
+				"state": "closed",
+				"children": [
+					{
+						"id": "U2016819g171745f",
+						"clickSign": "database",
+						"text": "sa",
+						"iconCls": "icon-connection",
+						"dbinfo": "dbType=MySql&hostName=saf&dbName=sas&port=3306&userName=root&password=&conName=sa",
+						"state": "open",
+						"domId": "_easyui_tree_30",
+						"target": {
+							
+						}
+					}
+				]
+			},
+			{
+				"id": "k2016819E17175h",
+				"clickSign": 12,
+				"text": "步骤",
+				"state": "closed"
+			},
+			{
+				"id": "N2016819S17175u",
+				"clickSign": 13,
+				"text": "节点",
+				"state": "closed"
+			},
+			{
+				"id": "o2016819517175W",
+				"clickSign": 14,
+				"text": "数据库分区",
+				"state": "closed"
+			}
+		]
+	}
+]

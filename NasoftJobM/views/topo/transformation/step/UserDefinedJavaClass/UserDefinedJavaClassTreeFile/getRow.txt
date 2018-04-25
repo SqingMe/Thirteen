@@ -1,0 +1,4 @@
+public Object[] getRow() throws KettleException
+{
+    return parent.getRowImpl();
+}

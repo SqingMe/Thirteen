@@ -1,0 +1,4 @@
+public void setVariable(String variableName, String variableValue)
+{
+    parent.setVariableImpl(variableName, variableValue);
+}

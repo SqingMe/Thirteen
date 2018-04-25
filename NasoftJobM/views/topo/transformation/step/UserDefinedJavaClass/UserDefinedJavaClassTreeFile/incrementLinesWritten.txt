@@ -1,0 +1,4 @@
+public long incrementLinesWritten()
+{
+    return parent.incrementLinesWrittenImpl();
+}

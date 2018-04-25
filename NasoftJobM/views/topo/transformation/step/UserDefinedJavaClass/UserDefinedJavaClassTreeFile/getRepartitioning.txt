@@ -1,0 +1,4 @@
+public int getRepartitioning()
+{
+    return parent.getRepartitioningImpl();
+}

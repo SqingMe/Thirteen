@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对账</title>
+    <link rel="stylesheet" href="/NasoftJobM/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/NasoftJobM/static/bootstrap/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/NasoftJobM/static/bootstrap/css/icon.css">
+    <link rel="stylesheet" href="/NasoftJobM/css/background.css">
+    <link rel="stylesheet" href="/NasoftJobM/css/check.css">
+
+
+    <script type="text/javascript" src="/NasoftJobM/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/moment.min.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/zh-cn.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/js/checkData.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/js/checkTemplate.js"></script>
+</head>
+<body>
+<div class="container-fluid check-container">
+<!--    <div class="row">
+    <div class="col-md-6">
+        <div id="UP" class="panel panel-default check-panel">
+            <div class="panel-heading nasoft-head">
+                <span class="icon icon-up-brand "></span>
+                <span>银联数据对账</span>
+                <div class="clear-date">
+                    <t>清算日期：</t>
+                    <div class='input-group date'>
+                        <input type='text' class="form-control"/>
+                        <span class="input-group-addon">
+                    <span class="icon icon-ns-calendar">
+                    </span>
+                </span>
+                    </div>
+                </div>
+
+            </div>
+            <div class="panel-body nasoft-body">
+                <div class="row">
+                    <div class="col-md-12 nasoft-progress">
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                 style="width: 100%;">
+                                <span class="sr-only">100% 完成（信息）</span>
+                            </div>
+                        </div>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr/><hr class="point"/><hr class="point"/><hr class="point"/><hr/>
+                    <div class="col-md-12 check-foot">
+                        <a class="btn btn-default btn-sm" href="#" role="button">&nbsp&nbsp&nbsp&nbsp对账&nbsp&nbsp&nbsp&nbsp</a>
+                        <a class="btn btn-default btn-sm" href="#" role="button">对账撤销</a>
+                        <span class="check-text">对账状态：<mark class="check-success">已完成</mark></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div id="UPS" class="panel panel-default check-panel">
+            <div class="panel-heading nasoft-head">
+                <span class="icon icon-up-brand "></span>
+                <span>银联对账</span>
+                <div class="clear-date">
+                    <t>清算日期：</t>
+                    <div class='input-group date'>
+                        <input type='text' class="form-control"/>
+                        <span class="input-group-addon">
+                    <span class="icon icon-ns-calendar">
+                    </span>
+                </span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-body nasoft-body">
+                <div class="row">
+                    <div class="col-md-12 nasoft-progress">
+                        <div class="progress progress-striped">
+                            <div class="progress-bar progress-bar-info" role="progressbar"
+                                 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                 style="width: 100%;">
+                                <span class="sr-only">100% 完成（信息）</span>
+                            </div>
+                        </div>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <hr><hr class="point"><hr class="point"><hr class="point"><hr>
+                    <div class="col-md-12 check-foot">
+                        <a class="btn btn-default btn-sm" href="#" role="button">&nbsp&nbsp&nbsp&nbsp对账&nbsp&nbsp&nbsp&nbsp</a>
+                        <a class="btn btn-default btn-sm" href="#" role="button">对账撤销</a>
+                        <span class="check-text">对账状态：<mark class="check-success">已完成</mark></span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default check-panel">
+                <div class="panel-heading nasoft-head">
+                    <span class="icon icon-up-brand "></span>
+                    <span>银联数据对账</span>
+                    <div class="clear-date">
+                        <t>清算日期：</t>
+                        <div class='input-group date'>
+                            <input type='text' class="form-control"/>
+                            <span class="input-group-addon">
+                    <span class="icon icon-ns-calendar">
+                    </span>
+                </span>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="panel-body nasoft-body">
+                    <div class="row">
+                        <div class="col-md-12 nasoft-progress">
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 100%;">
+                                    <span class="sr-only">100% 完成（信息）</span>
+                                </div>
+                            </div>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr/><hr class="point"/><hr class="point"/><hr class="point"/><hr/>
+                        <div class="col-md-12 check-foot">
+                            <a class="btn btn-default btn-sm" href="#" role="button">&nbsp&nbsp&nbsp&nbsp对账&nbsp&nbsp&nbsp&nbsp</a>
+                            <a class="btn btn-default btn-sm" href="#" role="button">对账撤销</a>
+                            <span class="check-text">对账状态：<mark class="check-success">已完成</mark></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default check-panel">
+                <div class="panel-heading nasoft-head">
+                    <span class="icon icon-up-brand "></span>
+                    <span>银联对账</span>
+                    <div class="clear-date">
+                        <t>清算日期：</t>
+                        <div class='input-group date'>
+                            <input type='text' class="form-control"/>
+                            <span class="input-group-addon">
+                    <span class="icon icon-ns-calendar">
+                    </span>
+                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-body nasoft-body">
+                    <div class="row">
+                        <div class="col-md-12 nasoft-progress">
+                            <div class="progress progress-striped">
+                                <div class="progress-bar progress-bar-info" role="progressbar"
+                                     aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                                     style="width: 100%;">
+                                    <span class="sr-only">100% 完成（信息）</span>
+                                </div>
+                            </div>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                            <a href="#"><span class="icon icon-check-status"></span><span>2</span></a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <hr><hr class="point"><hr class="point"><hr class="point"><hr>
+                        <div class="col-md-12 check-foot">
+                            <a class="btn btn-default btn-sm" href="#" role="button">&nbsp&nbsp&nbsp&nbsp对账&nbsp&nbsp&nbsp&nbsp</a>
+                            <a class="btn btn-default btn-sm" href="#" role="button">对账撤销</a>
+                            <span class="check-text">对账状态：<mark class="check-success">已完成</mark></span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+</div>
+
+
+</body>
+<script>
+    $(function () {
+
+      var checkLayout = new CheckLayout(checkData);
+      checkLayout.init();
+      console.log(checkLayout);
+       /* $('#UP').find(".date").datetimepicker({
+            format : "YYYYMMDD",
+            locale: "zh-CN",
+            showTodayButton: true,
+            maxDate:new Date(),
+            minDate:'20180401'
+        });*/
+    });
+</script>
+</html>

@@ -1,0 +1,4 @@
+public String getStatusDescription()
+{
+    return parent.getStatusDescriptionImpl();
+}

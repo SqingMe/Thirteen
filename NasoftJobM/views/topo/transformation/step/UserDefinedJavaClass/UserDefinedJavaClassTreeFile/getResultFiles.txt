@@ -1,0 +1,4 @@
+public Map getResultFiles()
+{
+    return parent.getResultFilesImpl();
+}

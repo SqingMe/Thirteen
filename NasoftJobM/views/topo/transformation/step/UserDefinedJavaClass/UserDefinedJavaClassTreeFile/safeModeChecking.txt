@@ -1,0 +1,4 @@
+public void safeModeChecking(RowMetaInterface row) throws KettleRowException
+{
+    parent.safeModeCheckingImpl(row);
+}

@@ -1,0 +1,4 @@
+public void setLinesInput(long newLinesInputValue)
+{
+    parent.setLinesInputImpl(newLinesInputValue);
+}

@@ -1,0 +1,22 @@
+{
+	"name": "",
+	"description": null,
+	"type": "SIMPLE_EVAL",
+	"valuetype": "field",
+	"fieldname": null,
+	"variablename": null,
+	"fieldtype": "string",
+	"mask": null,
+	"comparevalue": null,
+	"minvalue": null,
+	"maxvalue": null,
+	"successcondition": "equal",
+	"successnumbercondition": "equal",
+	"successbooleancondition": false,
+	"successwhenvarset": "N",
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 329,
+	"yloc": 201
+}

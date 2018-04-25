@@ -1,0 +1,13 @@
+ {
+	"name": "",
+	"description": null,
+	"type": "WRITE_TO_LOG",
+	"logmessage": null,
+	"loglevel": null,
+	"logsubject": null,
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 399,
+	"yloc": 161
+}

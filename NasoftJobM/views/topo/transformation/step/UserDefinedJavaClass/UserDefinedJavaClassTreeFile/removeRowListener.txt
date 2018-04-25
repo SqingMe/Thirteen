@@ -1,0 +1,4 @@
+public void removeRowListener(RowListener rowListener)
+{
+    parent.removeRowListenerImpl(rowListener);
+}

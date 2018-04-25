@@ -1,0 +1,96 @@
+[
+	{
+		"id": "dataprocess",
+		"info": [],
+		"text": "数据处理",
+		"children": [
+			{
+				"id": "CST",
+				"text": "常量定义",
+				"iconCls": "icon-CST"
+			},
+			{
+				"id": "GFN",
+				"text": "获取文件名",
+				"iconCls": "icon-GFN"
+			},
+			{
+				"id": "SCR_exe",
+				"text": "执行脚本",
+				"iconCls": "icon-SCR_exe"
+			},
+			{
+				"id": "SEL",
+				"text": "选择字段",
+				"iconCls": "icon-SEL"
+			},
+			{
+				"id": "SPL",
+				"text": "字段拆分",
+				"iconCls": "icon-SPL"
+			},
+			{
+				"id": "STM",
+				"text": "处理字符串",
+				"iconCls": "icon-STM"
+			},
+			{
+				"id": "SVA",
+				"text": "设置环境变量",
+				"iconCls": "icon-SVA"
+			},
+			{
+				"id": "SYS",
+				"text": "获得系统信息",
+				"iconCls": "icon-SYS"
+			},
+			{
+				"id": "textFileInput",
+				"text": "文件输入源",
+				"iconCls": "icon-textFileInput"
+			},
+			{
+				"id": "TFO",
+				"text": "文件输出源",
+				"iconCls": "icon-TFO"
+			},
+			{
+				"id": "tableInput",
+				"text": "表输入源",
+				"iconCls": "icon-tableInput"
+			},
+			{
+				"id": "tableOutput",
+				"text": "表输出源",
+				"iconCls": "icon-tableOutput"
+			}
+		]
+	},
+	{
+		"id": "jobprocess",
+		"info": [],
+		"text": "作业处理",
+		"children": [
+			{
+				"id": "GFTP",
+				"text": "FTP下载",
+				"iconCls": "icon-GFTP"
+			},
+			{
+				"id": "STR",
+				"text": "开始",
+				"iconCls": "icon-STR"
+			},
+			{
+				"id": "SUC",
+				"text": "成功",
+				"iconCls": "icon-SUC"
+			},
+			{
+				"id": "TRN",
+				"text": "数据处理模块",
+				"iconCls": "icon-TRN"
+			}
+		]
+	}
+]

@@ -1,0 +1,4 @@
+public void addResultFile(ResultFile resultFile)
+{
+    parent.addResultFileImpl(resultFile);
+}

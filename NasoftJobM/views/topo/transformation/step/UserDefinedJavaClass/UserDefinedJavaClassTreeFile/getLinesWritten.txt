@@ -1,0 +1,4 @@
+public long getLinesWritten()
+{
+    return parent.getLinesWrittenImpl();
+}

@@ -1,0 +1,4 @@
+public long decrementLinesWritten()
+{
+    return parent.decrementLinesWrittenImpl();
+}

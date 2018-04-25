@@ -1,0 +1,23 @@
+{
+	"name": "",
+	"type": "SystemInfo",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"fields": "",
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 384,
+		"yloc": 304,
+		"draw": "Y"
+	}
+}

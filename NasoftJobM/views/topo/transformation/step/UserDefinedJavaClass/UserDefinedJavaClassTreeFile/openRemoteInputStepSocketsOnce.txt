@@ -1,0 +1,4 @@
+public void openRemoteInputStepSocketsOnce() throws KettleStepException
+{
+    parent.openRemoteInputStepSocketsOnceImpl();
+}

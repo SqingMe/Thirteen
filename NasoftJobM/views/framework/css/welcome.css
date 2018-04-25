@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* 对账处理平台 欢迎界面 Add By xyq Begin at 2016-11-10*/
+#bk_img {
+	position: absolute;
+	width: 1130px;
+	height: 495px;
+	float: left;
+	overflow: hidden;
+}
+
+#title_name {
+	width: 400px;
+	height: 150px;
+	margin-left: 66px;
+	margin-top: 91px;
+	text-align: center;
+	position: absolute;
+}
+
+#title_name .p1 {
+	font: Arial, Helvetica, sans-serif;
+	font-size: 48px;
+	color: #09F;
+	margin: 0 auto;
+}
+
+#title_name .p2 {
+	font: Verdana, Geneva, sans-serif;
+	font-size: 40px;
+	color: #09F;
+	margin-top: 10px;
+}
+
+#footer {
+	text-align: center;
+	position: absolute;
+	background: -webkit-linear-gradient(white, gray, #999, #666);
+	color: #FFF;
+	width: 1130px;
+	height: 30px;
+	line-height: 30px;
+	margin-top: 495px;
+	margin-left: 0px;
+}
+
+#welcome-bg {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: relative;
+	background: url("../images/background.png");
+	background-size: 100% 100%;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+/* 对账处理平台 欢迎界面 Add By xyq End at 2016-11-10*/

@@ -1,0 +1,4 @@
+public void setOutputRowSets(List outputRowSets)
+{
+    parent.setOutputRowSetsImpl(outputRowSets);
+}

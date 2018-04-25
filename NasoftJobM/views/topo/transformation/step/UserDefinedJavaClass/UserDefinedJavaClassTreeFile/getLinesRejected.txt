@@ -1,0 +1,4 @@
+public long getLinesRejected()
+{
+    return parent.getLinesRejectedImpl();
+}

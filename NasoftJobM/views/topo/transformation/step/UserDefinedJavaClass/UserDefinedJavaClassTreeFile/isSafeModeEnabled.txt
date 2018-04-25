@@ -1,0 +1,4 @@
+public boolean isSafeModeEnabled()
+{
+    return parent.isSafeModeEnabledImpl();
+}

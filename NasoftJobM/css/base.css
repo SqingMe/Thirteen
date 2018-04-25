@@ -1,0 +1,271 @@
+
+
+/***************************************主页面布局start*****************************************************************/
+.main-panel {
+    border: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.main-panel > .panel-heading {
+    background-image: linear-gradient(-180deg, #4D4D4D 0%, #212020 100%);
+    box-shadow: 0 1px 0 0 #000000;
+    width: 100%;
+    min-width: 100%;
+    height: 6.6%;
+    border-radius: 0;
+    padding: 0 15px 0 15px;
+    border: 0;
+    margin-right: auto;
+    magin-left: auto;
+}
+
+.main-panel > .panel-heading .nasoft-brand {
+    display: inline-block;
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    padding: 1% 0 0 0;
+}
+
+.main-panel > .panel-heading span + span {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+
+.main-panel > .panel-body {
+    overflow: auto;
+    overflow: auto;
+    position: relative;
+    width: 100%;
+    height: 93.4%;
+}
+
+.main-panel > .panel-heading .dropdown > a {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+
+}
+
+#left-menu {
+    width: 7.3%;
+    height: 100%;
+    background-color: #373737;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    border: 1px solid transparent;
+    overflow: auto;
+}
+
+#left-menu li {
+    width: 100%;
+}
+
+#left-menu li a :last-child {
+    display: block;
+}
+
+#left-menu li a span + span {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #B4B4B4;
+    letter-spacing: 0;
+}
+
+#left-child-menu {
+    position: absolute;
+    left: 7.3%;
+    display: inline-block;
+    width: 15.9%;
+    height: 100%;
+    background: #DEDEDE;
+    border: 1px solid transparent;
+    overflow: auto;
+}
+
+#left-child-menu li {
+    width: 100%;
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 98%);
+    border: 1px solid #CDCDCD;
+}
+
+#left-child-menu li a .icon {
+    float: left;
+}
+
+#left-child-menu li a {
+    overflow: hidden;
+}
+
+#left-child-menu li a span + span {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #202020;
+    letter-spacing: 0;
+    line-height: 17px;
+    float: left;
+    margin-left: 15px;
+}
+
+.welcome-panel {
+    position: absolute;
+    left: 23.2%;
+    width: 76.8%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+}
+
+.welcome-panel > .panel-heading {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 98%);
+    border: 1px solid #CDCDCD;
+    box-shadow: 0 2px 0 0 #FFFFFF;
+    width: 100%;
+    height: 9.8%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 25px 15px;
+}
+
+.welcome-panel > .panel-heading .panel-title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #626262;
+    letter-spacing: 1px;
+}
+
+.welcome-panel > .panel-body {
+    background: #F1F1F1;
+    border: 1px solid #CDCDCD;
+    width: 100%;
+    height: 90.2%;
+    overflow: auto;
+}
+
+.welcome-panel .panel-title {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #636363;
+    letter-spacing: 1px;
+}
+
+.welcome-panel > .panel-body > :first-child {
+    margin-top: 1%;
+}
+
+.welcome-panel > .panel-body > .row + .row {
+    height: 54%;
+}
+
+.welcome-panel > .panel-body > .row + .row > div {
+    height: 100%;
+    margin-top: 3%;
+}
+
+.welcome-panel > .panel-body > .row + .row .work-panel-b {
+    height: 100%;
+}
+
+.welcome-panel > .panel-body > .row + .row .work-panel-b > .panel-body {
+    height: 88.6%;
+}
+
+.work-panel-t > .panel-body {
+    padding: 35px 15px 35px 15px;
+}
+.work-panel-t > .panel-body > :last-child {
+    padding-top: 16px;
+    overflow: auto;
+}
+
+.work-panel-t > .panel-body > :last-child :first-child {
+    font-family: PingFangSC-Semibold;
+    font-size: 36px;
+    color: #636363;
+    letter-spacing: 1px;
+}
+
+.work-panel-t > .panel-body > :last-child :last-child {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: 1px;
+    display: block;
+}
+
+/*.work-panel-b {
+    float: left;
+
+    width: 96.4%;
+    height: 51.2%;
+}*/
+
+a:hover, a:focus {
+    text-decoration: none
+}
+
+.left-nav > ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.left-child-nav > ul {
+    list-style: none;
+    padding: 0px;
+    display: none;
+}
+
+.left-nav > ul > li {
+    text-align: center;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 0.00) 97%);
+    border: 1px solid #555555;
+}
+
+.left-nav > ul > .active {
+    background-color: #525252;
+    color: #ffffff;
+}
+
+.left-child-nav > ul > .active {
+    background-color: #9bc0f6;
+    color: #ffffff;
+}
+
+.left-nav > ul li a {
+    color: gray;
+    display: block;
+    padding: 14px 5%;
+    border-top: 1px solid #4f4f4f;
+    border-bottom: 1px solid #292929;
+    cursor: pointer;
+}
+
+.left-child-nav > ul li a {
+    display: block;
+    padding: 8px;
+    border-bottom: 1px solid #cbcbcb;
+    cursor: pointer;
+    color: #202020;
+}
+
+.left-nav > ul li a:hover {
+    background-color: #525252;
+    color: #ffffff;
+}
+
+.left-child-nav > ul li a:hover {
+    background-color: #23a081;
+    color: #ffffff;
+}
+
+/***************************************主页面布局end*****************************************************************/
+

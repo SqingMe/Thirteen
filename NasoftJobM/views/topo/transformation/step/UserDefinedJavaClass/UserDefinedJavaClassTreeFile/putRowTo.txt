@@ -1,0 +1,4 @@
+public void putRowTo(RowMetaInterface rowMeta, Object[] row, RowSet rowSet) throws KettleStepException
+{
+    parent.putRowToImpl(rowMeta, row, rowSet);
+}

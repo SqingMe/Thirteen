@@ -1,0 +1,4 @@
+public long getLinesOutput()
+{
+    return parent.getLinesOutputImpl();
+}

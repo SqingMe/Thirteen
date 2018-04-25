@@ -1,0 +1,94 @@
+[
+	{
+		"id": "2",
+		"info": [],
+		"text": "作业处理",
+		"children": [
+			{
+				"id": "FTP",
+				"text": "FTP下载",
+				"iconCls": "icon-FTP"
+			},
+			{
+				"id": "SPECIAL",
+				"text": "START",
+				"iconCls": "icon-SPECIAL"
+			},
+			{
+				"id": "SUCCESS",
+				"text": "成功",
+				"iconCls": "icon-SUCCESS"
+			},
+			{
+				"id": "TRANS",
+				"text": "转换",
+				"iconCls": "icon-TRANS"
+			},
+			{
+				"id": "SQL",
+				"text": "SQL",
+				"iconCls": "icon-SQL"
+			},
+			{
+				"id": "SET_VARIABLES",
+				"text": "设置变量",
+				"iconCls": "icon-SET_VARIABLES"
+			},
+			{
+				"id": "DELAY",
+				"text": "等待",
+				"iconCls": "icon-DELAY"
+			},
+			{
+				"id": "SIMPLE_EVAL",
+				"text": "检验字段的值",
+				"iconCls": "icon-SIMPLE_EVAL"
+			},
+			{
+				"id": "ABORT",
+				"text": "中止作业",
+				"iconCls": "icon-ABORT"
+			},
+			{
+				"id": "WRITE_TO_LOG",
+				"text": "写日志",
+				"iconCls": "icon-WRITE_TO_LOG"
+			},
+			{
+				"id": "JOB",
+				"text": "作业",
+				"iconCls": "icon-JOB"
+			},
+			{
+				"id": "FILE_EXISTS",
+				"text": "检查一个文件是否存在",
+				"iconCls": "icon-FILE_EXISTS"
+			},
+			{
+				"id": "CREATE_FILE",
+				"text": "创建文件",
+				"iconCls": "icon-CREATE_FILE"
+			},
+			{
+				"id": "CREATE_FOLDER",
+				"text": "创建一个目录",
+				"iconCls": "icon-CREATE_FOLDER"
+			},
+			{
+				"id": "UNZIP",
+				"text": "解压缩文件",
+				"iconCls": "icon-UNZIP"
+			},
+			{
+				"id": "EVAL_FILES_METRICS",
+				"text": "计算文件大小或个数",
+				"iconCls": "icon-EVAL_FILES_METRICS"
+			},
+			{
+				"id": "EVAL_TABLE_CONTENT",
+				"text": "计算表中的记录数",
+				"iconCls": "icon-EVAL_TABLE_CONTENT"
+			}
+		]
+	}
+]

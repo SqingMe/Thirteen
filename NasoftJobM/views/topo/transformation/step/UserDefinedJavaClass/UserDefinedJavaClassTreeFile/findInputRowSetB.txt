@@ -1,0 +1,4 @@
+public RowSet findInputRowSet(String from, int fromcopy, String to, int tocopy)
+{
+    return parent.findInputRowSetImpl(from, fromcopy, to, tocopy);
+}

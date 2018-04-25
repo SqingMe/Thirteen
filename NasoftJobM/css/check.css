@@ -1,0 +1,135 @@
+.check-container {
+    padding: 20px;
+}
+
+body {
+    background-color: #F1F1F1;;
+}
+
+.check-panel {
+
+}
+
+/*对账面板头*/
+.check-panel .panel-heading {
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #636363;
+    letter-spacing: 1px;
+}
+
+.check-panel > .panel-heading::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+/*对账面板标签定位对齐*/
+.check-panel .panel-heading > .icon {
+    position: relative;
+    top: 3px;
+}
+
+/*对账面板体上内边距*/
+.check-panel .panel-body {
+    padding-top: 60px;
+}
+
+/*对账面板标签*/
+.check-panel .icon-up-brand {
+    width: 26px;
+    height: 16px;
+}
+.check-panel .panel-body .nasoft-progress{
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+}
+/*进度条去边距*/
+.nasoft-progress > .progress {
+    padding: 0;
+    margin: 0;
+}
+
+/*进度条的阶段信息*/
+.nasoft-progress > a {
+    padding-left: 20%;
+    display: inline-block;
+    width: 30%;
+}
+
+/*进度条的阶段信息*/
+.nasoft-progress > a > span {
+    display: block;
+}
+
+/*分割线*/
+.check-panel hr {
+    display: inline-block;
+    width: 47%;
+    border-top: 1px solid #CDCDCD;
+}
+
+/*对账面板上分割线的装饰小方块*/
+.check-panel .point {
+    display: inline-block;
+    list-style-type: none;
+    width: 1%;
+    background-image: linear-gradient(-180deg, #FFFFFF 2%, #EAEAEA 97%);
+    box-shadow: 0 1px 1px 0;
+    padding-bottom: 0.5%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding-top: 0.5%;
+}
+
+.check-container .check-panel .btn {
+    background-image: linear-gradient(-180deg, #F8F8F8 0%, #FCFCFC 34%, #E8E8E8 100%);
+    border: 1px solid #CDCDCD;
+    border-radius: 2px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: 0;
+}
+.check-panel .panel-body > .row + .row > .check-foot > :first-child{
+    margin-right: 3%;
+}
+.check-panel .panel-body .check-text {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: 0;
+    float: right;
+}
+.check-panel .panel-body .check-text mark {
+    line-height: 16px;
+}
+.check-panel .panel-body .check-text .check-success {
+    color: green;
+}
+.check-panel .panel-heading > .clear-date {
+    float: right;
+}
+.check-panel .panel-heading > .clear-date t {
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: 0;
+}
+.check-panel .panel-heading  .input-group{
+    margin:0;
+    float: right;
+    width: 110px;
+}
+
+.check-panel .panel-heading .input-group > .form-control{
+    height:20px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #636363;
+    letter-spacing: 0;
+}
+.check-panel .panel-heading .input-group >.input-group-addon{
+    padding:0;
+    border: 0;
+}

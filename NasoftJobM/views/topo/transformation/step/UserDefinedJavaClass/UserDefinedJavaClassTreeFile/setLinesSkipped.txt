@@ -1,0 +1,4 @@
+public void setLinesSkipped(long newLinesSkippedValue)
+{
+    parent.setLinesSkippedImpl(newLinesSkippedValue);
+}

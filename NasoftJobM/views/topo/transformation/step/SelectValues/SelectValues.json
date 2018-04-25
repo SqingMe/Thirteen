@@ -1,0 +1,25 @@
+{
+	"name": "",
+	"type": "SelectValues",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"fields": {
+		"select_unspecified": "N"
+	},
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 208,
+		"yloc": 336,
+		"draw": "Y"
+	}
+}

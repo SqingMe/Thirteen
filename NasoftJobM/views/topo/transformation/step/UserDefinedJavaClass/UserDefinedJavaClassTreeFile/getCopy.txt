@@ -1,0 +1,4 @@
+public int getCopy()
+{
+    return parent.getCopyImpl();
+}

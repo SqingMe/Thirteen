@@ -1,0 +1,22 @@
+{
+	"name": "",
+	"type": "Dummy",
+	"description": null,
+	"distribute": "N",
+	"custom_distribution": null,
+	"copies": 1,
+	"partitioning": {
+		"method": "none",
+		"schema_name": null
+	},
+	"cluster_schema": null,
+	"remotesteps": {
+		"input": "",
+		"output": ""
+	},
+	"GUI": {
+		"xloc": 485,
+		"yloc": 127,
+		"draw": "Y"
+	}
+}

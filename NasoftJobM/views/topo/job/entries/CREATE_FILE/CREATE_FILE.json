@@ -1,0 +1,13 @@
+{
+	"name": "",
+	"description": null,
+	"type": "CREATE_FILE",
+	"filename": null,
+	"fail_if_file_exists": "Y",
+	"add_filename_result": "N",
+	"parallel": "N",
+	"draw": "Y",
+	"nr": 0,
+	"xloc": 254,
+	"yloc": 207
+}

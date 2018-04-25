@@ -1,0 +1,4 @@
+public String getTypeId()
+{
+    return parent.getTypeIdImpl();
+}

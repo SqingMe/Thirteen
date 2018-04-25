@@ -1,0 +1,4 @@
+public long getProcessed()
+{
+    return parent.getProcessedImpl();
+}
