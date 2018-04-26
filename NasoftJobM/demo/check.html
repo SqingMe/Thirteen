@@ -15,10 +15,11 @@
     <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap-datetimepicker.min.js"></script>
     <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/zh-cn.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/js/checkData.js"></script>
     <script type="text/javascript" src="/NasoftJobM/js/checkTemplate.js"></script>
+    <script type="text/javascript" src="/NasoftJobM/js/checkConfig.js"></script>
 </head>
 <body>
+
 <div class="container-fluid check-container">
 
 </div>
@@ -27,13 +28,12 @@
 </body>
 <script>
     $(function () {
-
         $.ajax({
             url : "/NasoftJobM/json/data.json",
             type : "get",
             dataType : "json",
             success : function(data){
-                var checkLayout = new CheckLayout(checkData);
+                var checkLayout = new CheckLayout(data);
                 checkLayout.init();
                 console.log(checkLayout);
             }

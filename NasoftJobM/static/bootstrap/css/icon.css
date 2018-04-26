@@ -38,8 +38,17 @@
 .icon-check-status {
 	background:url('../icons/checkStatus.png') no-repeat 0 center;
 }
-.icon-up-brand {
+.icon-UP-brand {
 	background:url('../icons/银联.png') no-repeat 0 center;
+}
+.icon-DJ-brand {
+	background:url('../icons/银联.png') no-repeat 0 center;
+}
+.icon-AP-brand {
+	background:url('../icons/银联.png') no-repeat 0 center;
+}
+.icon-WP-brand {
+	background:url('../icons/微信.png') no-repeat 0 center;
 }
 .icon-ns-calendar {
 	background:url('../icons/日期（带框）.png') no-repeat center center;

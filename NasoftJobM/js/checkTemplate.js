@@ -4,14 +4,31 @@
 function CheckTemplate(html, data) {
     var template = $(html);
     var that = this;
+    /*面板对象*/
     this.target = template;
+    /*面板关联树*/
     this.data = data;
     /*面板对应的对账渠道*/
     this.id = data.checkChannel;
+    /*时间控件*/
+    this.datetimepicker = this.target.find(".check-panel .panel-heading .clear-date .date");
+    /*进度条*/
+    this.progressBar = this.target.find(".check-panel .panel-body .progress-bar");
+    /*对账按钮*/
+    this.startBtn = this.target.find(".check-panel .panel-body .check-foot button").eq(0);
+    /*撤销对账按钮*/
+    this.cancelBtn = this.target.find(".check-panel .panel-body .check-foot button").eq(1);
+    /*渲染面板标题*/
     this.target.find(".check-panel .panel-heading .check-describe").text(this.data.checkDescribe);
+    this.target.find(".check-panel .panel-heading .icon").addClass("icon-"+this.id+"-brand");
     /*初始化面板数据*/
     (function () {
         var that = this;
+       this.datetimepicker.datetimepicker({
+           minDate:"20180101",
+           defaultDate:this.data.stlDate
+       });
+        console.log(this.datetimepicker.data("DateTimePicker").defaultDate(this.data.stlDate));
         $.ajax({
             url: this.configuration.initUrl + this.id + ".json",
             type: "get",
@@ -20,11 +37,11 @@ function CheckTemplate(html, data) {
              checkChannel: that.attr("id").toUpperCase()
              },*/
             success: function (data) {
-                console.table(data);
                 that.resetData(data);
             }
         });
     }).call(this);
+    /*重置数据*/
     this.resetData = function (data) {
         this.data = data;
         this.configuration.controller[this.data.checkState]["work"].call(this);
@@ -32,9 +49,7 @@ function CheckTemplate(html, data) {
         updateButtons.call(this);
         updateState.call(this);
     }
-    this.progressBar = this.target.find(".check-panel .panel-body .progress-bar");
-    this.startBtn = this.target.find(".check-panel .panel-body .check-foot button").eq(0);
-    this.cancelBtn = this.target.find(".check-panel .panel-body .check-foot button").eq(1);
+
     /*对账按钮点击事件*/
     this.startBtn.on("click", function () {
         that.configuration.clickCheck.call(that);
@@ -140,85 +155,5 @@ function Interval(fun, time, panel) {
     }
 }
 CheckTemplate.prototype.interval = null;
-CheckTemplate.prototype.configuration = {
-    initUrl : "/NasoftJobM/json/",
-    controller: [
-        {
-            flag:"未对账",
-            stateClass:"un-check",
-            buttonState: "false,true",
-            work: function () {
-            }
-        }, {
-            flag:"对账中",
-            stateClass:"checking",
-            buttonState: "true,true",
-            work: function () {
-                var that = this;
-                /*没有定时器就创建一个定时器任务*/
-                if(this.interval === null){
-                  this.interval = new Interval(function () {
-                        $.ajax({
-                            url: "/NasoftJobM/json/"+that.id + ".json",
-                            data: that.data,
-                            dataType: "json",
-                            success: function (data) {
-                                console.log(data);
-                                that.resetData(data);
-                            }
-                        });
-                    },10000,this);
-                }
-            }
-        }, {
-            flag:"完成",
-            stateClass:"check-success",
-            buttonState: "true,false",
-            work: function () {
-                if(this.interval !== null){
-                    this.interval.close();
-                }
-                this.progressBar.removeClass("progress-bar-danger").addClass(" progress-bar-success");
-            }
-        }, {
-            flag:"失败",
-            stateClass:"check-failure",
-            buttonState: "true,false",
-            work: function () {
-                if(this.interval !== null){
-                    this.interval.close();
-                }
-                this.progressBar.removeClass("progress-bar-success").addClass(" progress-bar-danger");
-            }
-        },{
-            flag:"已撤销",
-            stateClass:"check-reset",
-            buttonState: "false,false",
-            work: function () {
-            }
-        }
 
-    ],
-    clickCheck: function () {
-        var that = this;
-        $.ajax({
-            url: "/NasoftJobM/json/message.json",
-            type: "post",
-            dataType: "json",
-            data: this.data,
-            success: function (data) {
-                if ("success" === data.message) {
-                } else if ("error" === data.message) {
-                    return;
-                } else {
-                    return;
-                }
-            }
-        });
-    },
-    clickCancel: function () {
-        console.log("撤销对账", this.data);
-    }
-
-}
 
