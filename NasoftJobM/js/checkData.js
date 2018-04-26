@@ -74,23 +74,5 @@ var checkData = [{
     "errorDescribe": null,
     "checkStartStop": null
 }]
-var setDate = {
-    "stateCn" : "失败",
-    "progressCn" : "对账完毕",
-    "progressNum" : "60",
-    "stlLastDate" : "20180302",
-    "bussinessCode" : null,
-    "checkChannel" : "UP",
-    "checkState" : "3",
-    "checkProgress" : "13",
-    "checkStartDate" : "20180423042617",
-    "checkStopDate" : null,
-    "checkDescribe" : "银联对账",
-    "logLevel" : "ERROR",
-    "stlDate" : "20180303",
-    "stlDateNext" : "20180304",
-    "checkUser" : "",
-    "errorDescribe" : null,
-    "checkStartStop" : null
-}
+
 

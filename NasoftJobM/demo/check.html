@@ -28,12 +28,17 @@
 <script>
     $(function () {
 
-      var checkLayout = new CheckLayout(checkData);
-      checkLayout.init();
-      console.log(checkLayout);
-       var panel = checkLayout.find("UP");
-        panel.resetData(setDate);
-      console.log(panel);
+        $.ajax({
+            url : "/NasoftJobM/json/data.json",
+            type : "get",
+            dataType : "json",
+            success : function(data){
+                var checkLayout = new CheckLayout(checkData);
+                checkLayout.init();
+                console.log(checkLayout);
+            }
+        });
+
        /* $('#UP').find(".date").datetimepicker({
             format : "YYYYMMDD",
             locale: "zh-CN",

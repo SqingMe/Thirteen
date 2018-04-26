@@ -1,0 +1,19 @@
+{
+  "stateCn": "已撤销",
+  "progressCn": "开始",
+  "progressNum": "0",
+  "stlLastDate": "20180409",
+  "bussinessCode": null,
+  "checkChannel": "DJ",
+  "checkState": "4",
+  "checkProgress": "0",
+  "checkStartDate": null,
+  "checkStopDate": null,
+  "checkDescribe": "银联数据对账",
+  "logLevel": "ERROR",
+  "stlDate": "20180410",
+  "stlDateNext": "20180411",
+  "checkUser": "",
+  "errorDescribe": null,
+  "checkStartStop": null
+}

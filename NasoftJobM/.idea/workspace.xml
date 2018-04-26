@@ -15,16 +15,6 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="menus-json.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/menus-json.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9430">
-              <caret line="410" column="27" lean-forward="false" selection-start-line="410" selection-start-column="27" selection-end-line="410" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="background.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/background.css">
           <provider selected="true" editor-type-id="text-editor">
@@ -38,18 +28,18 @@
       <file leaf-file-name="check.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/check.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+            <state relative-caret-position="321">
+              <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkTemplate.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="checkTemplate.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/checkTemplate.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2001">
-              <caret line="92" column="42" lean-forward="true" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+            <state relative-caret-position="230">
+              <caret line="180" column="99" lean-forward="false" selection-start-line="180" selection-start-column="99" selection-end-line="180" selection-end-column="99" />
               <folding>
                 <element signature="n#!!doc;n#CheckTemplate#0" expanded="false" />
               </folding>
@@ -57,14 +47,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="checkData.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/checkData.js">
+      <file leaf-file-name="UP.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/json/UP.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="538">
-              <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="184">
+              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="message.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/message.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -73,51 +71,20 @@
         <entry file="file://$PROJECT_DIR$/demo/checkTemplate.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="44" />
+              <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="parent.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/parent.html">
+      <file leaf-file-name="DJ.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/json/DJ.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="40" lean-forward="false" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="icon.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/bootstrap/css/icon.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="989">
-              <caret line="43" column="17" lean-forward="false" selection-start-line="43" selection-start-column="1" selection-end-line="43" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bootstrap-datetimepicker.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap-datetimepicker.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/check.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="109" column="54" lean-forward="true" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+            <state relative-caret-position="414">
+              <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -136,9 +103,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>nasoft-center-glyphicon</find>
-      <find>nasoft-font</find>
-      <find>project</find>
       <find>charts-font</find>
       <find>icon-check</find>
       <find>icon-form</find>
@@ -166,6 +130,9 @@
       <find>id='datetimepicker'</find>
       <find>id='datetimepicker1'</find>
       <find>check-text</find>
+      <find>getCheckBarData</find>
+      <find>Interval</find>
+      <find>defaults</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,11 +161,18 @@
         <option value="$PROJECT_DIR$/static/bootstrap/css/bootstrap-datetimepicker.min.css" />
         <option value="$PROJECT_DIR$/static/bootstrap/css/icon.css" />
         <option value="$PROJECT_DIR$/static/bootstrap/js/zh-cn.js" />
-        <option value="$PROJECT_DIR$/demo/checkTemplate.html" />
-        <option value="$PROJECT_DIR$/demo/check.html" />
-        <option value="$PROJECT_DIR$/js/checkTemplate.js" />
-        <option value="$PROJECT_DIR$/js/checkData.js" />
         <option value="$PROJECT_DIR$/css/check.css" />
+        <option value="$PROJECT_DIR$/json/up.json" />
+        <option value="$PROJECT_DIR$/json/up2.json" />
+        <option value="$PROJECT_DIR$/json/up3.json" />
+        <option value="$PROJECT_DIR$/js/checkData.js" />
+        <option value="$PROJECT_DIR$/json/up1.json" />
+        <option value="$PROJECT_DIR$/demo/check.html" />
+        <option value="$PROJECT_DIR$/json/data.json" />
+        <option value="$PROJECT_DIR$/json/message.json" />
+        <option value="$PROJECT_DIR$/demo/checkTemplate.html" />
+        <option value="$PROJECT_DIR$/js/checkTemplate.js" />
+        <option value="$PROJECT_DIR$/json/UP.json" />
       </list>
     </option>
   </component>
@@ -329,6 +303,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NasoftJobM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="NasoftJobM" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -370,10 +358,6 @@
               <option name="myItemId" value="NasoftJobM" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -387,20 +371,21 @@
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/js/bootstrap/css" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="JSON" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\js" />
-      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\css" />
-      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\icons" />
-      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap" />
-      <recent name="D:\nodeProject\NasoftJobM\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\nodeProject\NasoftJobM\static" />
       <recent name="D:\nodeProject\NasoftJobM\static\js" />
       <recent name="D:\nodeProject\NasoftJobM\views\framework\js" />
       <recent name="D:\nodeProject\NasoftJobM\js\bootstrap" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Thirteen\NasoftJobM\json" />
+      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\js" />
+      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\css" />
+      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap\icons" />
+      <recent name="D:\nodeProject\NasoftJobM\static\bootstrap" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -510,27 +495,28 @@
       <workItem from="1524617855962" duration="815000" />
       <workItem from="1524618709898" duration="6680000" />
       <workItem from="1524633552873" duration="10412000" />
-      <workItem from="1524647268287" duration="5997000" />
+      <workItem from="1524647268287" duration="6147000" />
+      <workItem from="1524702714177" duration="15712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185465000" />
+    <option name="totallyTimeSpent" value="201327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1857" height="1098" extended-state="0" />
+    <frame x="-9" y="-9" width="1857" height="1098" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27678087" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31009364" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32908458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -552,73 +538,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/framework/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="48" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/tabs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1771">
-          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/menus-json.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2691">
-          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98072">
-          <caret line="4264" column="7" lean-forward="false" selection-start-line="4264" selection-start-column="1" selection-end-line="4264" selection-end-column="7" />
-          <folding>
-            <marker date="1524562540934" expanded="true" signature="251:255" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo/parent.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" column="32" lean-forward="false" selection-start-line="71" selection-start-column="32" selection-end-line="71" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/bootstrap/a.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/framework/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="9" lean-forward="true" selection-start-line="34" selection-start-column="9" selection-end-line="34" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/base.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="7" lean-forward="false" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -755,14 +674,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/background.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/menus-json.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="9430">
@@ -834,51 +745,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo/checkTemplate.html">
+    <entry file="file://$PROJECT_DIR$/css/check.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="20" column="44" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="44" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="2507">
+          <caret line="109" column="54" lean-forward="false" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/AP.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/checkData.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="85" column="40" lean-forward="true" selection-start-line="85" selection-start-column="40" selection-end-line="85" selection-end-column="40" />
+        <state relative-caret-position="745">
+          <caret line="76" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/check.css">
+    <entry file="file://$PROJECT_DIR$/json/WP.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="109" column="54" lean-forward="true" selection-start-line="109" selection-start-column="54" selection-end-line="109" selection-end-column="54" />
+        <state relative-caret-position="253">
+          <caret line="11" column="23" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/DJ.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="1" lean-forward="false" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/EcmaScript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1564">
+          <caret line="68" column="0" lean-forward="false" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/background.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/checkTemplate.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="20" column="65" lean-forward="false" selection-start-line="20" selection-start-column="65" selection-end-line="20" selection-end-column="65" />
+          <folding>
+            <element signature="n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/message.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/check.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="33" column="34" lean-forward="false" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state relative-caret-position="321">
+          <caret line="31" column="45" lean-forward="false" selection-start-line="31" selection-start-column="45" selection-end-line="31" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/checkTemplate.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2001">
-          <caret line="92" column="42" lean-forward="true" selection-start-line="92" selection-start-column="42" selection-end-line="92" selection-end-column="42" />
+        <state relative-caret-position="230">
+          <caret line="180" column="99" lean-forward="false" selection-start-line="180" selection-start-column="99" selection-end-line="180" selection-end-column="99" />
           <folding>
             <element signature="n#!!doc;n#CheckTemplate#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/UP.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <folding />
         </state>
       </provider>
     </entry>
