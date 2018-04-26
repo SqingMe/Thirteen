@@ -4,7 +4,8 @@
 $.extend($.fn.datetimepicker.defaults ,{
     format : "YYYYMMDD",
     locale: 'zh-CN',
-    maxDate:new Date()
+    maxDate:new Date(),
+    useCurrent:false
 });
 
 CheckTemplate.prototype.configuration = {

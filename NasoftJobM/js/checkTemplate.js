@@ -24,11 +24,8 @@ function CheckTemplate(html, data) {
     /*初始化面板数据*/
     (function () {
         var that = this;
-       this.datetimepicker.datetimepicker({
-           minDate:"20180101",
-           defaultDate:this.data.stlDate
-       });
-        console.log(this.datetimepicker.data("DateTimePicker").defaultDate(this.data.stlDate));
+       this.datetimepicker.datetimepicker();
+        console.log();
         $.ajax({
             url: this.configuration.initUrl + this.id + ".json",
             type: "get",
@@ -37,6 +34,7 @@ function CheckTemplate(html, data) {
              checkChannel: that.attr("id").toUpperCase()
              },*/
             success: function (data) {
+                that.datetimepicker.data("DateTimePicker").defaultDate(data.stlDate);
                 that.resetData(data);
             }
         });
