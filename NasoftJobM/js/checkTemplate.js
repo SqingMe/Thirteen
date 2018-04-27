@@ -23,9 +23,8 @@ function CheckTemplate(html, data) {
     this.target.find(".check-panel .panel-heading .icon").addClass("icon-"+this.id+"-brand");
     /*初始化面板数据*/
     (function () {
-        var that = this;
-       this.datetimepicker.datetimepicker();
-        console.log();
+       var that = this;
+      this.datetimepicker.datetimepicker().on("dp.change",this.configuration.dateChange.bind(this));
         $.ajax({
             url: this.configuration.initUrl + this.id + ".json",
             type: "get",
@@ -105,20 +104,21 @@ function CheckLayout(data) {
     }).responseText;
     var that = this;
     this.init = function () {
-        /*创建一行*/
-        var row = new BootRow();
-
+        /*定义行变量*/
+        var row = null;
         /*遍历接口数据*/
         $.each(data, function (i, o) {
+            /*创建行的条件*/
+            if (row === null || row.childrenLength() === 2 ){
+                row = new BootRow();
+                that.rows.push(row);
+                row.appendTo(that.target);
+            }
             /*o的数据就是每个面板的初始化数据*/
             var template = new CheckTemplate(that.checkTemplate, o);
             row = row.append(template);
-            /*如果此行的成员以满，则将此行加入文档中，同时再创建一行替换变量*/
-            if (row.childrenLength() === 2) {
-                row.appendTo(that.target);
-                /*将此行加入行列表*/
-                that.rows.push(row);
-                row = new BootRow();
+            if (row.childrenLength() === 1 && 1 === data.length){
+                template.target.removeClass("col-md-6").addClass("col-md-12");
             }
         });
     }

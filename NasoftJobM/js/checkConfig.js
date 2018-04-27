@@ -86,6 +86,59 @@ CheckTemplate.prototype.configuration = {
     },
     clickCancel: function () {
         console.log("撤销对账", this.data);
+    },
+    dateChange : function (date) {
+       var defaultDate = this.datetimepicker.data("DateTimePicker").defaultDate();
+        console.log("选中日期与默认日期相同："+defaultDate.isSame(date.date));
+        console.log("初始选中默认日期："+ (date.oldDate===null&&defaultDate.isSame(date.date)));
+        console.log("再次选中默认日期："+ (date.oldDate!==null&&defaultDate.isSame(date.date)));
+        console.log(date.date.format(date.date._f));
+       /*不是初始化选中日期*/
+       if(date.oldDate!==null){
+           var that = this;
+           this.date.stlDate = date.date.format(date.date._f);
+           $.ajax({
+               // 将对账信息结果保存
+               url: $.getRootPath() + "/CheckInfoCtrl/selectStlDate",
+               type: "POST",
+               dataType: "json",
+               data: this.data,
+               success: function(data) {
+                   if (data.message) {
+                       if (data.message.indexOf("没有对账记录") > -1) {
+                           // 前一天的对账已完成
+                           if (confirm(data.message)) {
+                               that.configuration.createCheckResult.call(that);
+                           } else {
+                               that.datetimepicker.data("DateTimePicker").defaultDate(date.oldDate);
+                           }
+                       } else {
+                           alert(data.message);
+                       }
+                   } else {
+                      that.resetData(data);
+                   }
+               }
+           })
+       };
+    },
+    createCheckResult:function() {
+        var that = this;
+        $.ajax({
+            url: $.getRootPath() + "/CheckInfoCtrl/createCheckResult",
+            type: "POST",
+            dataType: "json",
+            data: that.data("checkInfo"),
+            success: function(data) {
+                if (data.message) {
+                    alert(data.message ? data.message : "对账记录生成 失败！");
+                    return;
+                } else {
+                    that.resetData(data);
+                }
+            }
+        });
     }
+
 
 }
