@@ -71,11 +71,7 @@
 
 #left-menu li a :last-child {
     display: block;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
+    font-size: 0;
 }
 
 #left-menu li a span + span {
@@ -91,7 +87,6 @@
     width: 0;
     height: 100%;
     background: #DEDEDE;
-
     overflow: auto;
 }
 
@@ -99,6 +94,7 @@
     width: 100%;
     background-image: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 98%);
     border: 1px solid #CDCDCD;
+    opacity:0;
 }
 
 #left-child-menu li a .icon {

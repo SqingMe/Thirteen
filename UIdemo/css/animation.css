@@ -1,7 +1,44 @@
-.advance{
-    -webkit-transition: with 2s;
-    -moz-transition: with 2s;
-    -ms-transition: with 2s;
-    -o-transition: with 2s;
-    transition: with 2s;
+@keyframes widerL {
+    0%{
+        width:5%;
+    }
+    100%{
+        width:7.3%;
+    }
+}
+
+@keyframes widerC {
+    0%{
+        width:0%;
+    }
+    100%{
+        width:15.9%;
+    }
+}
+
+@keyframes widerR {
+    0%{
+        width:76.8%;
+    }
+    100%{
+        width:95%;
+    }
+}
+
+.animator-left {
+    -webkit-animation:widerL 1s;
+    -o-animation:widerL 1s;
+    animation:widerL 1s;
+}
+
+.animator-center {
+    -webkit-animation:widerC 1s;
+    -o-animation:widerC 1s;
+    animation:widerC 1s;
+}
+
+.animator-right {
+    -webkit-animation:widerR 1s;
+    -o-animation:widerR 1s;
+    animation:widerR 1s;
 }

@@ -23,7 +23,8 @@ function MyConstant(obj) {
     }
 }
 /**/
-function MenuNode(data, type) {
+function MenuNode(data,wholeMenu) {
+    this.wholeMenu = wholeMenu;
     /*创建一个li作为一个菜单项*/
     this.target = $('<li></li>');
     /*创建一个a标签作为handler*/
@@ -47,6 +48,9 @@ function MenuNode(data, type) {
         $(this).parent().addClass("active").siblings().removeClass("active");
         if (that.childMenu) {
             that.childMenu.target.show().siblings().hide();
+            that.wholeMenu.smallMain();
+            that.wholeMenu.showParent();
+            that.wholeMenu.showChild();
         } else {
             that.configuration.events.select.call(that);
         }
@@ -63,13 +67,13 @@ function WholeMenu(data) {
     /*遍历菜单数据，创建菜单项组*/
     $.each(data, function (i, n) {
         /*新建一个菜单节点*/
-        var menuNode = new MenuNode(n);
+        var menuNode = new MenuNode(n,this);
         menuContarner.target.append(menuNode.target);
         menuContarner.nodes.push(menuNode);
         if (n.menu && n.menu.length >= 0) {
-            menuNode.childMenu = new ChildMenu(n.menu);
+            menuNode.childMenu = new ChildMenu(n.menu,this);
         }
-    });
+    }.bind(this));
     this.parentContainer = $(myConstant.FLV);
     this.childContainer = $(myConstant.SLV);
     this.welcomePanel = $(myConstant.WLC);
@@ -118,23 +122,23 @@ WholeMenu.prototype.bigMain = function () {
 }
 WholeMenu.prototype.smallMain = function () {
     this.welcomePanel.css({width: "76.8%", transition: "width 1s"});
-    this.tabs.css({width: "76.8%", transition: "width 1s"});
+    this.tabs.css({width: "76.8%", transition: "width 1s ease-in"});
 }
 WholeMenu.prototype.hideChild = function () {
     this.childContainer.css({transition: "width 1s",width:'0', border: "none"});
-    this.childContainer.find("li").css({transition: "transform 1s",transform:'scaleX(0)'});
+    this.childContainer.find("li").css({opacity:0});
 }
 WholeMenu.prototype.showChild = function () {
     this.childContainer.css({transition: "width 1s", width: "15.9%",border: "1px solid transparent"});
-    this.childContainer.find("li").css({transition: "transform 1s",transform:'scaleX(1)'});
+    this.childContainer.find("li").css({transition:"opacity 1s ease-in",opacity:1});
 }
 WholeMenu.prototype.hideParent = function () {
     this.parentContainer.css({transition: "width 1s", width: "5%"});
-    this.parentContainer.find("li > a :last-child").css({/*display: "none"*/transform:"scale(0)"});
+    this.parentContainer.find("li > a :last-child").css({"font-size":"0"});
 }
 WholeMenu.prototype.showParent = function () {
     this.parentContainer.css({transition: "width 1s", width: "7.3%"});
-    this.parentContainer.find("li > a :last-child").css({/*display: "block"*/transition:"transform 1s",transform:"scale(1)",height:""});
+    this.parentContainer.find("li > a :last-child").css({transition:"font-size 1s ease-in","font-size":"12px"});
 }
 WholeMenu.prototype.onHover = function () {
     console.log(this.next().css("width"))
