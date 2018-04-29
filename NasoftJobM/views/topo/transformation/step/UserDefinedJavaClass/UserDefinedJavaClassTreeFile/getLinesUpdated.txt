@@ -1,4 +1,0 @@
-public long getLinesUpdated()
-{
-    return parent.getLinesUpdatedImpl();
-}

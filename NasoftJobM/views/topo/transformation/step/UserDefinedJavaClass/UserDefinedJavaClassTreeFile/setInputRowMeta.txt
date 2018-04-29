@@ -1,4 +1,0 @@
-public void setInputRowMeta(RowMetaInterface rowMeta)
-{
-    parent.setInputRowMetaImpl(rowMeta);
-}

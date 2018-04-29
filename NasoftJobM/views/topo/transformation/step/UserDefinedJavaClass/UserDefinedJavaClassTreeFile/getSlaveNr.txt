@@ -1,4 +1,0 @@
-public int getSlaveNr()
-{
-    return parent.getSlaveNrImpl();
-}

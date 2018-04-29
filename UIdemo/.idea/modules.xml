@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../UIdemo/.idea/UIdemo.iml" filepath="$PROJECT_DIR$/../UIdemo/.idea/UIdemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/NasoftJobM.iml" filepath="$PROJECT_DIR$/.idea/NasoftJobM.iml" />
     </modules>
   </component>
 </project>

@@ -1,4 +1,0 @@
-public boolean outputIsDone()
-{
-    return parent.outputIsDoneImpl();
-}

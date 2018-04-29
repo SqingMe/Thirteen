@@ -1,0 +1,7 @@
+.advance{
+    -webkit-transition: with 2s;
+    -moz-transition: with 2s;
+    -ms-transition: with 2s;
+    -o-transition: with 2s;
+    transition: with 2s;
+}

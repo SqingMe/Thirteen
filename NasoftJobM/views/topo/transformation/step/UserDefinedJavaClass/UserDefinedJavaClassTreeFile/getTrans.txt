@@ -1,4 +1,0 @@
-public Trans getTrans()
-{
-    return parent.getTransImpl();
-}

@@ -1,4 +1,0 @@
-public Object[] getRowFrom(RowSet rowSet) throws KettleStepException
-{
-    return parent.getRowFromImpl(rowSet);
-}

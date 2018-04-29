@@ -1,4 +1,0 @@
-public void logDebug(String s)
-{
-    parent.logDebugImpl(s);
-}

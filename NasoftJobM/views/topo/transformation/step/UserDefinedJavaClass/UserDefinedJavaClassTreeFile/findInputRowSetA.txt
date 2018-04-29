@@ -1,4 +1,0 @@
-public RowSet findInputRowSet(String sourceStep) throws KettleStepException
-{
-    return parent.findInputRowSetImpl(sourceStep);
-}

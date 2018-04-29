@@ -1,4 +1,0 @@
-public int getUniqueStepCountAcrossSlaves()
-{
-    return parent.getUniqueStepCountAcrossSlavesImpl();
-}

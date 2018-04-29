@@ -1,4 +1,0 @@
-public void addRowListener(RowListener rowListener)
-{
-    parent.addRowListenerImpl(rowListener);
-}

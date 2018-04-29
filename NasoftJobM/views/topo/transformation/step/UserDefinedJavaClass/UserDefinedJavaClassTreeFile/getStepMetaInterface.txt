@@ -1,4 +1,0 @@
-public StepMetaInterface getStepMetaInterface()
-{
-    return parent.getStepMetaInterfaceImpl();
-}

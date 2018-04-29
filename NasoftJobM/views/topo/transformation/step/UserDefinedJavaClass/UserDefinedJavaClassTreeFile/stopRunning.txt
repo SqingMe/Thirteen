@@ -1,4 +1,0 @@
-public void stopRunning(StepMetaInterface stepMetaInterface, StepDataInterface stepDataInterface) throws KettleException
-{
-    parent.stopRunningImpl(stepMetaInterface, stepDataInterface);
-}

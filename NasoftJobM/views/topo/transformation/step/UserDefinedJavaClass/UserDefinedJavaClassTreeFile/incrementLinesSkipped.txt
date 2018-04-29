@@ -1,4 +1,0 @@
-public long incrementLinesSkipped()
-{
-    return parent.incrementLinesSkippedImpl();
-}

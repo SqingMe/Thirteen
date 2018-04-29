@@ -1,4 +1,0 @@
-public SocketRepository getSocketRepository()
-{
-    return parent.getSocketRepositoryImpl();
-}

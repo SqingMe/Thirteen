@@ -1,4 +1,0 @@
-public long decrementLinesRead()
-{
-    return parent.decrementLinesReadImpl();
-}

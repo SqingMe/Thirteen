@@ -1,4 +1,0 @@
-public void setLinesRejected(long linesRejected)
-{
-    parent.setLinesRejectedImpl(linesRejected);
-}

@@ -1,4 +1,0 @@
-public void setInputRowSets(List inputRowSets)
-{
-    parent.setInputRowSetsImpl(inputRowSets);
-}

@@ -1,4 +1,0 @@
-public String getVariable(String variableName, String defaultValue)
-{
-    return parent.getVariableImpl(variableName, defaultValue);
-}

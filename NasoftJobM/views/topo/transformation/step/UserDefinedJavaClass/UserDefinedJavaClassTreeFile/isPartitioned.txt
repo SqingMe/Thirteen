@@ -1,4 +1,0 @@
-public boolean isPartitioned()
-{
-    return parent.isPartitionedImpl();
-}

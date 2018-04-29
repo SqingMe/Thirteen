@@ -1,4 +1,0 @@
-public RowMetaInterface getErrorRowMeta()
-{
-    return parent.getErrorRowMetaImpl();
-}

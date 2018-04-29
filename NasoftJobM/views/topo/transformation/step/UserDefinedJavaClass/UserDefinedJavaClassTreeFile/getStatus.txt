@@ -1,4 +1,0 @@
-public StepExecutionStatus getStatus()
-{
-    return parent.getStatusImpl();
-}

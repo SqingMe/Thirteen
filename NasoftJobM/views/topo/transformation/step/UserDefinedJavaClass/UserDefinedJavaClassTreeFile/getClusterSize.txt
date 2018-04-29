@@ -1,4 +1,0 @@
-public int getClusterSize()
-{
-    return parent.getClusterSizeImpl();
-}

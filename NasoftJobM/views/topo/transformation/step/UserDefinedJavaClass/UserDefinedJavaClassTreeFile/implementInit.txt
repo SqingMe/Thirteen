@@ -1,4 +1,0 @@
-public boolean init(StepMetaInterface stepMetaInterface, StepDataInterface stepDataInterface)
-{
-    return parent.initImpl(stepMetaInterface, stepDataInterface);
-}

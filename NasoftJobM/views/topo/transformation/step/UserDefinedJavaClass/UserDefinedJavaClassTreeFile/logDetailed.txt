@@ -1,4 +1,0 @@
-public void logDetailed(String s)
-{
-    parent.logDetailedImpl(s);
-}
