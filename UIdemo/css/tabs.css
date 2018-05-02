@@ -1,0 +1,49 @@
+.tabs-panel{
+    display: none;
+    margin: 0;
+    float: left;
+    width: 95%;
+    height: 100%;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border: 1px solid transparent;
+}
+
+.tabs-panel > .tab-content > div{
+    height:100%;
+}
+
+.tabs-panel > .tab-content > div > iframe{
+    border: none;
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.tabs-panel > .nav-tabs > li > a, .nav-tabs > li > a:hover{
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #626262;
+    letter-spacing: 0.86px;
+}
+
+.tabs-panel > .nav-tabs > li > a > button.close {
+    font-size: 12px;
+    opacity: 1;
+    margin: 0 -12px auto 6px;
+}
+
+.tabs-panel > .nav-tabs > li.active > a,.tabs-panel .nav-tabs > li.active > a:hover,.tabs-panel .nav-tabs > li.active > a:focus{
+    color: #555;
+    cursor: default;
+    background-image: linear-gradient(-180deg, #63AAE1 0%, #2F7FBC 98%);
+    border: 1px solid #ddd;
+    border-bottom-color: rgb(221, 221, 221);
+    border-bottom-color: transparent;
+    font-family: MicrosoftYaHei-Bold;
+    color: #FFFFFF;
+}
+.tabs-panel > .nav-tabs > li.active > a > button.close{
+    color: #FFFFFF;
+ }

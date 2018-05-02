@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/UIdemo/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/UIdemo/css/base.css">
     <link rel="stylesheet" href="/UIdemo/css/animation.css">
+    <link rel="stylesheet" href="/UIdemo/css/background.css">
+    <link rel="stylesheet" href="/UIdemo/static/bootstrap/css/icon.css">
+    <script type="text/javascript" src="/UIdemo/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/UIdemo/static/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/menus-json.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/echarts.min.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/tabs.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/menu.js"></script>
     <style>
        html,body{
            height: 100%;
@@ -21,4 +31,7 @@
 <body>
     <div class="animator-left"></div>
 </body>
+<script>
+   $(".animator-left").resize(function(){console.log("窗口大小改变")});
+</script>
 </html>

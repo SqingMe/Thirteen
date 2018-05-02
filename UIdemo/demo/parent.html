@@ -4,17 +4,19 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=IE8">
     <title>对账差错综合业务处理系统</title>
-    <link rel="stylesheet" href="/NasoftJobM/static/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="/NasoftJobM/css/base.css">
-    <link rel="stylesheet" href="/NasoftJobM/css/animation.css">
-    <link rel="stylesheet" href="/NasoftJobM/css/background.css">
-    <link rel="stylesheet" href="/NasoftJobM/static/bootstrap/css/icon.css">
-    <script type="text/javascript" src="/NasoftJobM/static/js/jquery.min.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/static/bootstrap/js/bootstrap.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/js/menus-json.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/js/echarts.min.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/js/tabs.js"></script>
-    <script type="text/javascript" src="/NasoftJobM/js/menu.js"></script>
+    <link rel="stylesheet" href="/UIdemo/static/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/UIdemo/css/base.css">
+    <link rel="stylesheet" href="/UIdemo/css/animation.css">
+    <link rel="stylesheet" href="/UIdemo/css/background.css">
+    <link rel="stylesheet" href="/UIdemo/css/tabs.css">
+    <link rel="stylesheet" href="/UIdemo/static/bootstrap/css/icon.css">
+    <script type="text/javascript" src="/UIdemo/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/UIdemo/static/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/menus-json.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/echarts.min.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/tabs.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/menu.js"></script>
+    <script type="text/javascript" src="/UIdemo/js/menu-instance.js"></script>
     <style>
         .no-padding {
             padding: 0;
@@ -43,7 +45,7 @@
 
             </ul>
         </div>
-        <img src="/NasoftJobM/image/h.jpg" class="navbar-right navbar-btn img-circle" width="28px" height="28px">
+        <img src="/UIdemo/image/h.jpg" class="navbar-right navbar-btn img-circle" width="28px" height="28px">
     </div>
     <div class="panel-body no-padding">
         <div id="left-menu" class="left-nav">
@@ -60,16 +62,7 @@
             <div  href="#" class="menu-handler"></div>
         </div>
 
-        <div id="tabs" class="tabs-panel">
-            <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
-            </ul>
 
-            <!-- Tab panes -->
-            <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home"></div>
-            </div>
-        </div>
 
         <div id="welcome-panel" class="panel data-panel welcome-panel">
             <div class="panel-heading ">
@@ -146,21 +139,22 @@
                 </div>
             </div>
         </div>
-        <div class="my-tabs" style="display: none;">
-            <ul id="myTab" class="nav nav-tabs">
+        <div id="tabs" class="tabs-panel">
+            <ul class="nav nav-tabs" role="tablist">
                 <li class="active">
-                    <a href="#home" data-toggle="tab">欢迎使用</a>
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">欢迎使用</a>
                 </li>
                 <li>
-                    <a href="#ios" data-toggle="tab">流水查询<i
-                            class="tab-handler glyphicon glyphicon-remove tab-close"></i></a>
+                    <a href="#second" data-toggle="tab">流水查询
+                        <button type="button" class="close" aria-label="Close">&times;</button>
+                     </a>
                 </li>
             </ul>
-            <div id="myTabContent" class="tab-content">
+            <div class="tab-content">
                 <div class="tab-pane fade in active" id="home" role="tabpanel" class="tab-pane">
-
+                    <iframe src="check.html"></iframe>
                 </div>
-                <div class="tab-pane fade" id="ios">
+                <div class="tab-pane fade" id="second">
                     <p>45+6 </p>
                 </div>
             </div>
@@ -180,9 +174,7 @@
             ev.stopPropagation();
             closeTab.call(this);
         });
-        var menu = new WholeMenu(menusJson.menus);
-        console.log(menu);
-        menu.selectFirst("用户管理");
+        menuExpand(menusJson);
     });
 
 </script>

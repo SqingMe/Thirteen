@@ -1,12 +1,11 @@
 /**
  * Created by rsq0113 on 2018/4/20.
  */
-
 var myConstant = new MyConstant({
     FLV: "#left-menu",
     SLV: "#left-child-menu",
     WLC: "#welcome-panel",
-    WLT:"#tabs"
+    WLT: "#tabs"
 });
 function MyConstant(obj) {
     for (var key in obj) {
@@ -23,7 +22,7 @@ function MyConstant(obj) {
     }
 }
 /**/
-function MenuNode(data,wholeMenu) {
+function MenuNode(data, wholeMenu) {
     this.wholeMenu = wholeMenu;
     /*创建一个li作为一个菜单项*/
     this.target = $('<li></li>');
@@ -67,11 +66,11 @@ function WholeMenu(data) {
     /*遍历菜单数据，创建菜单项组*/
     $.each(data, function (i, n) {
         /*新建一个菜单节点*/
-        var menuNode = new MenuNode(n,this);
+        var menuNode = new MenuNode(n, this);
         menuContarner.target.append(menuNode.target);
         menuContarner.nodes.push(menuNode);
         if (n.menu && n.menu.length >= 0) {
-            menuNode.childMenu = new ChildMenu(n.menu,this);
+            menuNode.childMenu = new ChildMenu(n.menu, this);
         }
     }.bind(this));
     this.parentContainer = $(myConstant.FLV);
@@ -83,6 +82,7 @@ function WholeMenu(data) {
     this.data = data;
     this.menuContarner = menuContarner;
     $(myConstant.FLV).append(this.target);
+    this.effect.init.bind(this);
     this.parentContainer.hover(this.onHover.bind(this.parentContainer), this.onHoverOut.bind(this.parentContainer));
     this.childContainer.hover(this.onHover.bind(this.childContainer), this.onHoverOut.bind(this.childContainer));
     this.parentContainer.find(".menu-handler").on("click", function () {
@@ -90,20 +90,14 @@ function WholeMenu(data) {
         this.smallMain();
         this.showParent();
         this.showChild();
-        var tm = setTimeout(function () {
-            chartsMap.myChart_5.resize();
-            clearTimeout(tm);
-        }, 1000);
+
     }.bind(this));
     this.childContainer.find(".menu-handler").on("click", function () {
         this.childContainer.find(".menu-handler").css("display", "none");
         this.hideChild();
         this.hideParent();
         this.bigMain();
-        var tm = setTimeout(function () {
-            chartsMap.myChart_5.resize();
-            clearTimeout(tm);
-        }, 1000);
+
 
     }.bind(this));
 }
@@ -116,36 +110,74 @@ WholeMenu.prototype.selectFirst = function (name) {
         }
     }
 }
+WholeMenu.prototype.effect = {
+    disable : true,
+    init : function(menu){
+        if(!menu.effect.disable){
+            menu.welcomePanel.css({transition: "width 1s"});
+            menu.tabs.css({ transition: "width 1s"});
+            menu.childContainer.css({transition: "width 1s"});
+            menu.childContainer.find("li").css({transition: "opacity 1s"});
+            menu.parentContainer.css({transition: "width 1s"});
+            menu.parentContainer.find("li > a :last-child").css({transition: "font-size 1s"});
+        }
+    },
+    bigMain : function () {
+        this.welcomePanel.css({width: "95%"});
+        this.tabs.css({width: "95%"});
+    },
+    smallMain : function () {
+        this.welcomePanel.css({width: "76.8%"});
+        this.tabs.css({width: "76.8%"});
+    },
+    hideChild : function () {
+        this.childContainer.css({ width: '0', border: "none"});
+        this.childContainer.find("li").css({opacity: 0});
+    },
+    showChild : function () {
+        this.childContainer.css({width: "15.9%", border: "1px solid transparent"});
+        this.childContainer.find("li").css({opacity: 1});
+    },
+    hideParent : function () {
+        this.parentContainer.css({ width: "5%"});
+        this.parentContainer.find("li > a :last-child").css({"font-size": "0"});
+    },
+    showParent : function () {
+        this.parentContainer.css({ width: "7.3%"});
+        this.parentContainer.find("li > a :last-child").css({"font-size": "12px"});
+    }
+}
 WholeMenu.prototype.bigMain = function () {
-    this.welcomePanel.css({width: "95%"});
-    this.tabs.css({width: "95%"});
+        this.effect.bigMain.call(this);
+    var tm = setTimeout(function () {
+        chartsMap.myChart_5.resize();
+        clearTimeout(tm);
+    }, 1000);
 }
 WholeMenu.prototype.smallMain = function () {
-    this.welcomePanel.css({width: "76.8%", transition: "width 1s"});
-    this.tabs.css({width: "76.8%", transition: "width 1s ease-in"});
+        this.effect.smallMain.call(this);
+    var tm = setTimeout(function () {
+        chartsMap.myChart_5.resize();
+        clearTimeout(tm);
+    }, 1000);
 }
 WholeMenu.prototype.hideChild = function () {
-    this.childContainer.css({transition: "width 1s",width:'0', border: "none"});
-    this.childContainer.find("li").css({opacity:0});
+        this.effect.hideChild.call(this);
 }
 WholeMenu.prototype.showChild = function () {
-    this.childContainer.css({transition: "width 1s", width: "15.9%",border: "1px solid transparent"});
-    this.childContainer.find("li").css({transition:"opacity 1s ease-in",opacity:1});
+        this.effect.showChild.call(this);
 }
 WholeMenu.prototype.hideParent = function () {
-    this.parentContainer.css({transition: "width 1s", width: "5%"});
-    this.parentContainer.find("li > a :last-child").css({"font-size":"0"});
+        this.effect.hideParent.call(this);
 }
 WholeMenu.prototype.showParent = function () {
-    this.parentContainer.css({transition: "width 1s", width: "7.3%"});
-    this.parentContainer.find("li > a :last-child").css({transition:"font-size 1s ease-in","font-size":"12px"});
+        this.effect.showParent.call(this);
 }
 WholeMenu.prototype.onHover = function () {
     console.log(this.next().css("width"))
     if (this.attr("id") === "left-menu" && this.next().css("width") !== "0px") {
         return;
     }
-    ;
     this.timerShow = setTimeout(function () {
         this.find(".menu-handler").css({"display": "block", left: this.offset().left + this.width() + "px"});
         clearTimeout(this.timerShow);
@@ -181,12 +213,14 @@ function ChildMenu(data) {
 
 
 MenuNode.prototype.configuration = {
-    events:{
-        select : function () {
+    events: {
+        select: function () {
             $("#tabs").show();
             $("#welcome-panel").hide();
-            console.log(this.data);
-
+           var tabHeight = $("#tabs").height();
+           var tabHeadheigth = $("#tabs > .nav-tabs").height();
+            $("#tabs > .tab-content").height(tabHeight - tabHeadheigth);
+            addTab(this.data);
         }
     }
 }

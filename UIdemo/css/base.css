@@ -43,10 +43,6 @@
     height: 93.4%;
 }
 
-.main-panel > .panel-body ::after{
-    content: '' !important;
-}
-
 .main-panel > .panel-heading .dropdown > a {
     font-family: MicrosoftYaHei-Bold;
     font-size: 14px;
@@ -169,7 +165,7 @@
 
 .welcome-panel > .panel-body > .row + .row > div {
     height: 100%;
-    margin-top: 3%;
+    margin-top: 2%;
 }
 
 .welcome-panel > .panel-body > .row + .row .work-panel-b {
@@ -202,22 +198,7 @@
     letter-spacing: 1px;
     display: block;
 }
-.tabs-panel{
-    display: none;
-    margin: 0;
-    float: left;
-    width: 95%;
-    height: 100%;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-/*.work-panel-b {
-    float: left;
 
-    width: 96.4%;
-    height: 51.2%;
-}*/
 .menu-handler{
     display: none;
     position: absolute;

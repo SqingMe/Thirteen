@@ -6,27 +6,31 @@
 */
 function addTab(options) {
     //option:
-    //tabMainName:tab标签页所在的容器
-    //tabName:当前tab的名称
-    //tabTitle:当前tab的标题
-    //tabUrl:当前tab所指向的URL地址
-    var exists = checkTabIsExists(options.tabMainName, options.tabName);
+    //id:当前tab的名称
+    //title:当前tab的标题
+    //url:当前tab所指向的URL地址
+    var exists = tabIsExists(options.menuid);
     if(exists){
-        $("#tab_a_"+options.tabName).click();
+        $("#tab_li_"+options.menuid).click();
     } else {
-        $("#"+options.tabMainName).append('<li id="tab_li_'+options.tabName+'"><a href="#tab_content_'+options.tabName+'" data-toggle="tab" id="tab_a_'+options.tabName+'"><button class="close closeTab" type="button" onclick="closeTab(this);">×</button>'+options.tabTitle+'</a></li>');
-
+        $(myConstant.WLT + " > .nav-tabs").append('<li id="tab_li_'+options.menuid+'">' +
+            '<a href="#tab_content_'+options.menuid+'"><button class="close" type="button">×</button>'+options.menuname+'</a>' +
+            '</li>');
         //固定TAB中IFRAME高度
-        mainHeight = $(document.body).height() - 5;
-
         var content = '';
         if(options.content){
-            content = option.content;
+            content = options.content;
         } else {
-            content = '<iframe src="' + options.tabUrl + '" width="100%" height="'+mainHeight+'px" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="yes" allowtransparency="yes"></iframe>';
+            content = '<iframe src="' + options.url + '" width="100%" height="100%"></iframe>';
         }
-        $("#"+options.tabContentMainName).append('<div id="tab_content_'+options.tabName+'" role="tabpanel" class="tab-pane" id="'+options.tabName+'">'+content+'</div>');
-        $("#tab_a_"+options.tabName).click();
+        $(myConstant.WLT + " > .tab-content").append('<div id="tab_content_'+options.menuid+'" role="tabpanel" class="tab-pane">'+content+'</div>');
+        $("#tab_li_"+options.menuid + " > a").on("click",function (e) {
+            e.preventDefault();
+            console.log("click",this);
+            $(this).tab('show');
+        });
+        $("#tab_li_"+options.menuid + " > a > button.close").on("click",closeTab);
+        $("#tab_li_"+options.menuid + " > a").click();
     }
 }
 
@@ -36,15 +40,15 @@ function addTab(options) {
  * @param button
  */
 function closeTab () {
-
+     console.log("closeTab",this);
     //先判断当前要关闭的tab选项卡有没有active类，再判断当前选项卡是否最后一个，如果是则给前一个选项卡以及内容添加active，否则给下一个添加active类
-    var gParent=$(this).parent().parent(),
-        parent=$(this).parent();
+    var parent=$(this).parent(),gParent=parent.parent();
     if(gParent.hasClass('active')){
-        if(gParent.index()==gParent.length){
-            gParent.prev().find("a").click();
+        console.log(gParent.index(),gParent.siblings().length)
+        if(gParent.index()==gParent.siblings().length){
+            gParent.prev().find("a").click()
         }else{
-            gParent.next().find("a").click();
+            gParent.next().find("a").click()
         }
     }
     if($(parent.attr('href')).hasClass('fade')){
@@ -65,9 +69,8 @@ function closeTab () {
  * @param tabName
  * @returns {Boolean}
  */
-function checkTabIsExists(tabMainName, tabName){
-    var tab = $("#"+tabMainName+" > #tab_li_"+tabName);
-    //console.log(tab.length)
+function tabIsExists(tabName){
+    var tab = $(myConstant.WLT +" > #tab_li_"+tabName);
     return tab.length > 0;
 }
 
@@ -127,13 +130,8 @@ function loadTask1(id){
 
     // 基于准备好的dom，初始化echarts实例
     var myChart_1 = echarts.init(charts_1[0],theme);
-    //自适应宽高
-    function myChartContainer() {
-        myChart_1.style.width = window.innerWidth+'px';
-        myChart_1.style.height = window.innerHeight+'px';
-    };
+
     window.onresize = function () {
-        myChartContainer();
         myChart_1. resize()
     }
 
@@ -248,12 +246,8 @@ function loadSouth(vl){
     var myChart_5 = echarts.init(myChart[0],theme);
     myChart_5.setOption(option);
     window.chartsMap.myChart_5 = myChart_5;
-    function myChartContainer() {
-        myChart_5.style.width = window.innerWidth+'px';
-        myChart_5.style.height = window.innerHeight+'px';
-    };
+
     window.onresize = function () {
-        myChartContainer();
         myChart_5. resize()
     }
 
