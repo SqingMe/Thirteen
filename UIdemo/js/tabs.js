@@ -2,84 +2,104 @@
  * Created by rsq0113 on 2018/4/18.
  */
 /**
-* 增加标签页
-*/
-function addTab(options) {
-    //option:
-    //id:当前tab的名称
-    //title:当前tab的标题
-    //url:当前tab所指向的URL地址
-    var exists = tabIsExists(options.menuid);
-    if(exists){
-        $("#tab_li_"+options.menuid).click();
-    } else {
-        $(myConstant.WLT + " > .nav-tabs").append('<li id="tab_li_'+options.menuid+'">' +
-            '<a href="#tab_content_'+options.menuid+'"><button class="close" type="button">×</button>'+options.menuname+'</a>' +
-            '</li>');
-        //固定TAB中IFRAME高度
-        var content = '';
-        if(options.content){
-            content = options.content;
+ * 增加标签页
+ */
+(function(){
+    function Tabs(){
+        this.add = addTab;
+        this.close = closeTab;
+        this.exists = tabIsExists;
+    }
+    function addTab(options) {
+        //option:
+        //id:当前tab的名称
+        //title:当前tab的标题
+        //url:当前tab所指向的URL地址
+        var exists = tabIsExists(options.menuid);
+        if(exists){
+            $("#tab_li_"+options.menuid + " > a").click();
         } else {
-            content = '<iframe src="' + options.url + '" width="100%" height="100%"></iframe>';
-        }
-        $(myConstant.WLT + " > .tab-content").append('<div id="tab_content_'+options.menuid+'" role="tabpanel" class="tab-pane">'+content+'</div>');
-        $("#tab_li_"+options.menuid + " > a").on("click",function (e) {
-            e.preventDefault();
-            console.log("click",this);
-            $(this).tab('show');
-        });
-        $("#tab_li_"+options.menuid + " > a > button.close").on("click",closeTab);
-        $("#tab_li_"+options.menuid + " > a").click();
-    }
-}
-
-
-/**
- * 关闭标签页
- * @param button
- */
-function closeTab () {
-     console.log("closeTab",this);
-    //先判断当前要关闭的tab选项卡有没有active类，再判断当前选项卡是否最后一个，如果是则给前一个选项卡以及内容添加active，否则给下一个添加active类
-    var parent=$(this).parent(),gParent=parent.parent();
-    if(gParent.hasClass('active')){
-        console.log(gParent.index(),gParent.siblings().length)
-        if(gParent.index()==gParent.siblings().length){
-            gParent.prev().find("a").click()
-        }else{
-            gParent.next().find("a").click()
+            $(myConstant.WLT + " > .nav-tabs").append('<li id="tab_li_'+options.menuid+'">' +
+                '<a  href="#tab_content_'+options.menuid+'" title="'+options.menuname+'">' +
+                '<span class="icon b-' + options.icon + '"></span>'+
+                options.menuname+'</a>' +
+                '<button class="close" type="button">×</button>'+
+                '</li>');
+            //固定TAB中IFRAME高度
+            var content = '';
+            if(options.content){
+                content = options.content;
+            } else {
+                content = '<iframe src="' + options.url + '" width="100%" height="100%"></iframe>';
+            }
+            $(myConstant.WLT + " > .tab-content").append('<div id="tab_content_'+options.menuid+'" role="tabpanel" class="tab-pane fade">'+content+'</div>');
+            $("#tab_li_"+options.menuid + " > a").on("click",function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+            $("#tab_li_"+options.menuid + " > button.close").on("click",closeTab);
+            $("#tab_li_"+options.menuid + " > a").click();
         }
     }
-    if($(parent.attr('href')).hasClass('fade')){
-        var st = window.setTimeout(function(){
-            gParent.remove();
-            $(parent.attr('href')).remove();
-            window.clearTimeout(st);
-        },150)
-    }else {
-        gParent.remove();
-        $(parent.attr('href')).remove();
+
+
+    /**
+     * 关闭标签页
+     * @param button
+     */
+    function closeTab (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        console.log("closeTab",this);
+        //先判断当前要关闭的tab选项卡有没有active类，再判断当前选项卡是否最后一个，如果是则给前一个选项卡以及内容添加active，否则给下一个添加active类
+        var parent=$(this).parent(),receiver = null,a = parent.find("a");
+        if(parent.hasClass('active')){
+            if(parent.index()==parent.siblings().length){
+                receiver = parent.prev().find("a");
+            }else{
+                receiver = parent.next().find("a");
+            }
+        }
+        if($(a.attr('href')).hasClass('fade')){
+            var st = window.setTimeout(function(){
+                parent.remove();
+                $(a.attr('href')).remove();
+                window.clearTimeout(st);
+                if(receiver && receiver.length > 0){
+                    receiver.click();
+                }
+            },150)
+        }else {
+            parent.remove();
+            $(a.attr('href')).remove();
+            if(receiver && receiver.length > 0){
+                receiver.click();
+            }
+        }
+
+    };
+
+    /**
+     * 判断是否存在指定的标签页
+     * @param tabMainName
+     * @param tabName
+     * @returns {Boolean}
+     */
+    function tabIsExists(tabName){
+        var tab = $("#tab_li_"+tabName);
+        return tab.length > 0;
     }
-};
+    window.myTabs = new Tabs();
+})();
 
-/**
- * 判断是否存在指定的标签页
- * @param tabMainName
- * @param tabName
- * @returns {Boolean}
- */
-function tabIsExists(tabName){
-    var tab = $(myConstant.WLT +" > #tab_li_"+tabName);
-    return tab.length > 0;
-}
 
-function loadTask1(id){
+function loadTask1(index){
+    var id = "charts_" + index;
     // 指定图表的配置项和数据
     var option_1 = {
         title : {
             x : 'center',
-            textStyle:{fontWeight:'bold',fontheight:'bold', color:'green',fontsize:'30'},
+            textStyle:{fontWeight:'bold',fontheight:'bold', color:'#6AB5F0',fontsize:'30'},
         },
         tooltip: {
             trigger: 'item',
@@ -98,7 +118,7 @@ function loadTask1(id){
                     },
                     emphasis: {
                         show: true,
-                        borderColor: '#f60',
+                        borderColor: '',
                         textStyle: {
                             fontSize: '30',
                             color:'black'
@@ -117,12 +137,10 @@ function loadTask1(id){
             }
         ]
     };
+    var color = ["#6AB5F0","#F0794B","#9EC362"];
     theme = {
         // 默认色板
-        color: ['#b8860b','#87cefa','#da70d6','#32cd32','#6495ed',
-            '#ff69b4','#ba55d3','#cd5c5c','#ffa500','#40e0d0',
-            '#1e90ff','#ff6347','#7b68ee','#00fa9a','#ffd700',
-            '#6699FF','#ff7f50','#3cb371','#ff6666','#30e0e0']
+        color: [color[index]]
     };
     var charts_1=$("#"+id);
     var r = "100%"
@@ -130,20 +148,31 @@ function loadTask1(id){
 
     // 基于准备好的dom，初始化echarts实例
     var myChart_1 = echarts.init(charts_1[0],theme);
-
-    window.onresize = function () {
-        myChart_1. resize()
-    }
-
-  /*  /!**
+    window.chartsMap[id] = myChart_1;
+    /*  /!**
      * 为饼状图添加点击事件
      *!/
-    myChart_1.on('click',function(param){
-        addTab("待办任务",'/Corc-0/views/account/errorresults/list.jsp','icon icon-sys');
-    });*/
+     myChart_1.on('click',function(param){
+     addTab("待办任务",'/Corc-0/views/account/errorresults/list.jsp','icon icon-sys');
+     });*/
 
     // 使用刚指定的配置项和数据显示图表。
     myChart_1.setOption(option_1);
+}
+
+function ringProgress(i){
+    var id = "charts_" + i;
+    var c = $("#"+id);
+    c[0].width = c.parent().width()
+    c[0].height = 120;
+    var theme = ["#6AB5F0","#F0794B","#9EC362"];
+    var context = c[0].getContext("2d");
+    var ring = $.drawRing(context);
+    ring.barStyle = theme[i];
+    ring.percent = 0.2 * (i+1);
+    ring.drawRing();
+    ring.drawCenter();
+    window.chartsMap[id] = ring;
 }
 /**
  * @param vl
@@ -246,10 +275,5 @@ function loadSouth(vl){
     var myChart_5 = echarts.init(myChart[0],theme);
     myChart_5.setOption(option);
     window.chartsMap.myChart_5 = myChart_5;
-
-    window.onresize = function () {
-        myChart_5. resize()
-    }
-
 }
 window.chartsMap = {};

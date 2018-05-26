@@ -7,7 +7,51 @@
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
-    border: 1px solid transparent;
+    border: 1px solid #CDCDCD;
+}
+
+.tabs-panel > .nav-tabs {
+    background-image: linear-gradient(-180deg, #FFFFFF 0%, #EFEFEF 98%);
+    box-shadow: 0 1px 0 0 #FAFAFA;
+
+}
+
+.tabs-panel > .nav-tabs,.tabs-panel > .nav-tabs > li,.tabs-panel > .nav-tabs > li > a,.tabs-panel > .nav-tabs > li > a span{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tabs-panel > .nav-tabs > li {
+    -webkit-border-radius:4px 4px 0 0;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius:4px 4px 0 0;
+    background-image: linear-gradient(-180deg, #F8F8F8 0%, #FCFCFC 34%, #E8E8E8 100%);
+    border: 1px solid #CDCDCD;
+    margin-left: 4px;
+    margin-top: 4px;
+  /*  float: none;*/
+    display: inline-block;
+    width: 118px;
+}
+.tabs-panel > .nav-tabs > li > a {
+    -webkit-border-radius:4px 4px 0 0;
+    -moz-border-radius:4px 4px 0 0;
+    border-radius:4px 4px 0 0;
+    margin: 0;
+}
+
+.tabs-panel > .nav-tabs > li > a > .icon{
+     width: 12px;
+     height:12px;
+     display: inline-block;
+     position: relative;
+     top: 1px;
+     margin-right: 3px;
+ }
+
+.tabs-icon{
+
 }
 
 .tabs-panel > .tab-content > div{
@@ -28,10 +72,13 @@
     letter-spacing: 0.86px;
 }
 
-.tabs-panel > .nav-tabs > li > a > button.close {
+.tabs-panel > .nav-tabs > li > button.close {
     font-size: 12px;
     opacity: 1;
-    margin: 0 -12px auto 6px;
+    float: none;
+    position: absolute;
+    top:14px;
+    left:100px;
 }
 
 .tabs-panel > .nav-tabs > li.active > a,.tabs-panel .nav-tabs > li.active > a:hover,.tabs-panel .nav-tabs > li.active > a:focus{
@@ -44,6 +91,6 @@
     font-family: MicrosoftYaHei-Bold;
     color: #FFFFFF;
 }
-.tabs-panel > .nav-tabs > li.active > a > button.close{
+.tabs-panel > .nav-tabs > li.active > button.close{
     color: #FFFFFF;
  }

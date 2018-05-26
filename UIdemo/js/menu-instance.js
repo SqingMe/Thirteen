@@ -5,7 +5,7 @@
 function menuExpand(menusJson) {
     var menu = new WholeMenu(menusJson.menus);
     console.log(menu);
-    menu.selectFirst("用户管理");
+    menu.select("用户管理");
     menu.effect.disable = false;
     menu.effect.init(menu);
 }

@@ -1,62 +1,95 @@
-.b-icon-users{
-	background:url('../icons/用户配置.png') no-repeat center center;
+/**********************************************菜单图标***********************************************/
+.b-icon-users {
+    background: url('../icons/用户配置.png') no-repeat center center;
 }
-.b-icon-sysseting{
-	background:url('../icons/系统设置.png') no-repeat center center;
+
+.b-icon-sysseting {
+    background: url('../icons/系统设置.png') no-repeat center center;
 }
-.b-icon-database{
-	background:url('../icons/综合查询.png') no-repeat center center;
+
+.b-icon-database {
+    background: url('../icons/综合查询.png') no-repeat center center;
 }
-.b-icon-work{
-	background:url('../icons/我的任务.png') no-repeat center center;
+
+.b-icon-work {
+    background: url('../icons/我的任务.png') no-repeat center center;
 }
-.b-icon-check{
-	background:url('../icons/对账管理.png') no-repeat center center;
+
+.b-icon-check {
+    background: url('../icons/对账管理.png') no-repeat center center;
 }
-.b-icon-form{
-	background:url('../icons/统计报表.png') no-repeat center center;
+
+.b-icon-form {
+    background: url('../icons/统计报表.png') no-repeat center center;
 }
-.active .b-icon-users{
-	background:url('../icons/用户配置-选中.png') no-repeat center center;
+
+.b-icon-second {
+    background: url('../icons/二级图标.png') no-repeat center center;
 }
-.active .b-icon-sysseting{
-	background:url('../icons/系统设置-选中.png') no-repeat center center;
+
+.active .b-icon-second {
+    background: url('../icons/二级图标-反色.png') no-repeat center center;
 }
-.active .b-icon-database{
-	background:url('../icons/综合查询-选中.png') no-repeat center center;
+
+.active .b-icon-users {
+    background: url('../icons/用户配置-选中.png') no-repeat center center;
 }
-.active .b-icon-work{
-	background:url('../icons/我的任务-选中.png') no-repeat center center;
+
+.active .b-icon-sysseting {
+    background: url('../icons/系统设置-选中.png') no-repeat center center;
 }
-.active .b-icon-check{
-	background:url('../icons/对账管理-选中.png') no-repeat center center;
+
+.active .b-icon-database {
+    background: url('../icons/综合查询-选中.png') no-repeat center center;
 }
-.active .b-icon-form{
-	background:url('../icons/统计报表-选中.png') no-repeat center center;
+
+.active .b-icon-work {
+    background: url('../icons/我的任务-选中.png') no-repeat center center;
 }
+
+.active .b-icon-check {
+    background: url('../icons/对账管理-选中.png') no-repeat center center;
+}
+
+.active .b-icon-form {
+    background: url('../icons/统计报表-选中.png') no-repeat center center;
+}
+
+/**********************************************菜单图标END***********************************************/
+
+/**********************************************对账页面图标start***********************************************/
 
 .icon-check-status {
-	background:url('../icons/checkStatus.png') no-repeat 0 center;
-}
-.icon-UP-brand {
-	background:url('../icons/银联.png') no-repeat 0 center;
-}
-.icon-DJ-brand {
-	background:url('../icons/银联.png') no-repeat 0 center;
-}
-.icon-AP-brand {
-	background:url('../icons/银联.png') no-repeat 0 center;
-}
-.icon-WP-brand {
-	background:url('../icons/微信.png') no-repeat 0 center;
-}
-.icon-ns-calendar {
-	background:url('../icons/日期（带框）.png') no-repeat center center;
+    background: url('../icons/checkStatus.png') no-repeat 0 center;
 }
 
-.icon{
+.icon-UP-brand {
+    background: url('../icons/银联.png') no-repeat 0 center;
+}
+
+.icon-DJ-brand {
+    background: url('../icons/银联.png') no-repeat 0 center;
+}
+
+.icon-AP-brand {
+    background: url('../icons/银联.png') no-repeat 0 center;
+}
+
+.icon-WP-brand {
+    background: url('../icons/微信.png') no-repeat 0 center;
+}
+
+.icon-ns-calendar {
+    background: url('../icons/日期（带框）.png') no-repeat center center;
+}
+
+.icon-ns-person {
+    background: url('../icons/个人信息-弹出框白色.png') no-repeat center center;
+}
+/**********************************************对账页面图标END***********************************************/
+.icon {
     height: 20px;
-	width: 20px;
-	line-height: 20px;
-	display: inline-block;
+    width: 20px;
+    line-height: 20px;
+    display: inline-block;
 }
