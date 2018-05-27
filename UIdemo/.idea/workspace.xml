@@ -1,19 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b9222fd1-153d-4fc5-b270-00ed8b6b7a9d" name="Default" comment="">
+    <list default="true" id="b9222fd1-153d-4fc5-b270-00ed8b6b7a9d" name="Default" comment="idea">
       <change beforePath="$PROJECT_DIR$/../Demo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Demo/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/base.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/Test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/parent.html" beforeDir="false" afterPath="$PROJECT_DIR$/demo/parent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menu-instance.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menu-instance.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/menus-json.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/menus-json.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/bootstrap/css/icon.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/bootstrap/css/icon.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,7 +20,7 @@
       <file leaf-file-name="parent.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo/parent.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
+            <state relative-caret-position="312">
               <caret line="179" selection-start-line="179" selection-end-line="179" />
               <folding>
                 <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -77,7 +67,7 @@
       <file leaf-file-name="icon.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/bootstrap/css/icon.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
+            <state relative-caret-position="1634">
               <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
             </state>
           </provider>
@@ -244,10 +234,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
     <option name="width" value="1855" />
-    <option name="height" value="1089" />
+    <option name="height" value="1090" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -257,7 +247,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -269,6 +258,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -404,37 +394,47 @@
       <workItem from="1526368044381" duration="7758000" />
       <workItem from="1526377160834" duration="48000" />
       <workItem from="1526434976287" duration="15000" />
-      <workItem from="1527310437991" duration="2598000" />
+      <workItem from="1527310437991" duration="3520000" />
+      <workItem from="1527394511592" duration="761000" />
     </task>
+    <task id="LOCAL-00001" summary="idea">
+      <created>1527338619226</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1527338619226</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="368587000" />
+    <option name="totallyTimeSpent" value="370270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="1484" height="871" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info id="Image Layers" />
-      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32882273" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" visible="true" weight="0.34419262" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32908458" />
       <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info id="Capture Tool" />
-      <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21564625" />
-      <window_info anchor="right" id="Database" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2063802" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" />
-      <window_info anchor="right" id="Theme Preview" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Grunt " order="4" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -442,14 +442,53 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.31009364" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Grunt " order="4" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/static/bootstrap/css/bootstrap-theme.css">
@@ -738,7 +777,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/bootstrap/css/icon.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="541">
+        <state relative-caret-position="1634">
           <caret line="86" column="71" selection-start-line="86" selection-start-column="71" selection-end-line="86" selection-end-column="71" />
         </state>
       </provider>
@@ -811,18 +850,19 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="0.7561872909698997" x="740.4999999999999" y="796.9464838567005" />
+          <settings layout="Hierarchic Group" zoom="0.7561872909698997" x="740.0" y="797.0" />
           <SelectedNodes />
           <Categories>
             <Category>All</Category>
           </Categories>
+          <SCOPE>All</SCOPE>
           <VISIBILITY>Details</VISIBILITY>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/parent.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
+        <state relative-caret-position="312">
           <caret line="179" selection-start-line="179" selection-end-line="179" />
           <folding>
             <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
