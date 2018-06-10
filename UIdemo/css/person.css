@@ -1,0 +1,44 @@
+.person-info > .modal-dialog .modal-footer {
+    text-align: center;
+}
+.person-info > .modal-dialog .modal-footer > button.ns-cancel{
+    padding: 7px 25px 7px 25px;
+    font-family: MicrosoftYaHei;
+    font-size: 12px;
+    color: #FFFFFF;
+    background-image: linear-gradient(-180deg, #F38B8B 0%, #A93433 100%);
+}
+.person-info > .modal-dialog,.update-password > .modal-dialog{
+    width: 28%;
+}
+.modal-header{
+    padding: 10px;
+    background-image: linear-gradient(-180deg, #4D4D4D 0%, #212020 100%);
+    font-family: MicrosoftYaHei-Bold;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+}
+.modal-header > .close{
+    color: #FFFFFF;
+    opacity:.8;
+}
+.person-info  .modal-body .row :first-child {
+    text-align: right;
+}
+
+.person-info  .modal-body .row span{
+    font-family: MicrosoftYaHei;
+    font-size: 14px;
+    color: #202020;
+    padding: 5px 5px 5px 10px;
+    margin: 4px;
+}
+.person-info  .modal-body .row :last-child {
+    background: #F7F7F7;
+    border: 1px solid #CDCDCD;
+    border-radius: 2px;
+    display: inline-block;
+    text-align: left;
+    cursor: text;
+}
