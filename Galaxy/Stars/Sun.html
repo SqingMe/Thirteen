@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Sun</title>
+</head>
+<script type="text/javascript" src="js/jquery.min.js" ></script>
+<style type="text/css">
+    html,body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+    }
+   .th-container {
+       width: 100%;
+       height: 100%;
+       background: #101000;
+   }
+    .th-stars {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .th-stars li {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background: #9acfea;
+        opacity: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 100%;
+        transition: opacity,transform 8s;
+
+    }
+    .th-stars li:hover {
+        transform: scale(10);
+    }
+    .star {
+        animation: star 2s linear infinite;
+    }
+    @keyframes star {
+        0% {
+              opacity: 0.0;
+          }
+        50% {
+            opacity: 0.5;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
+
+<body>
+
+   <div class="th-container">
+       <ul class="th-stars">
+       </ul>
+   </div>
+
+</body>
+<script type="text/javascript">
+    function Stars() {
+         Fns.call(this);
+         this.COUNT = 1000;
+         this.stars = [];
+    }
+    function Star(){
+        fn.call(this);
+        this.timeout = null;
+        this.color = "#9acfea";
+        this.opacity = 0;
+        this.sacle = 1;
+        this.x = 0;
+        this.y = 0;
+        this.star = $("<li></li>");
+    }
+
+    function Timeout (func,t){
+        this.time = t || 0;
+        this.timer = setTimeout(func,t);
+        /*关闭定时器*/
+        this.close = function(){
+            clearTimeout(this.timer);
+        }
+    }
+    function fn (){
+        this.animate = function (animation) {
+            var defaults = {
+                opacity : 1,
+                transform : "scale(20) translate("+animation.x+"px,"+animation.y+"px)"
+            }
+           var that = this;
+            this.star.css(defaults);
+        }
+    }
+    function Fns(){
+        /*放置星星*/
+        this.pushStar = function (star) {
+             star.star.appendTo(".th-stars");
+             this.stars.push(star);
+        }
+        /*启动入口*/
+        this.init = function () {
+            for (var i=0;i<this.COUNT;i++){
+               var star = new Star();
+               this.pushStar(star);
+            }
+        }
+        /*定时器*/
+    }
+    $(function () {
+        var stars = new Stars();
+        stars.init();
+        a();
+        function b(min,max) {
+           return Math.floor(Math.random() * (max - min+1) + min);
+        }
+        $(document).click(a);
+        function a(e){
+            e = e ||{};
+             var x = e.pageX || "50%";
+             var y = e.pageY || "50%";
+            $.each(stars.stars,function (i,o) {
+                var change = 100;
+                var color = "rgb("+b(0,255)+","+b(0,255)+","+b(0,255)+")";
+                var shadow = "0 1px 20px 1px "+color;
+                o.star.css({
+                    opacity:0.7,
+                    transform:"scale(0) translate(0,0)",
+                    background:color,
+                    top: y+"px",
+                    left: x+"px",
+                    "box-shadow" : shadow
+                });
+                if(!o.timeout){
+                    o.timeout = new Timeout(function () {
+                        o.star.removeClass("star").addClass("star");
+                        o.animate({
+                            x: (b(-1,1)+0.5)*Math.random()*1000,
+                            y : (b(-1,1)+0.5)*Math.random()*1000
+                        });
+                        o.timeout.close();
+                        o.timeout = null;
+                    },i*50);
+                }
+
+
+            });
+        }
+
+   });
+
+</script>
+</html>
