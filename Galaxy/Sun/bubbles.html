@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bubbles</title>
+    <link rel="stylesheet" href="../Stars/css/default.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <style type="text/css">
+        .th-bubbles {
+            position: absolute;
+            left: 20%;
+            top: 20%;
+            width: 150px;
+            height: 150px;
+            border-radius: 100%;
+            box-shadow: 0 6px 63px -21px #0000FF inset;
+            transition: transform 3s;
+        }
+
+        .th-bubbles > .th-highlights {
+            display: block;
+            border-radius: 100%;
+            position: absolute;
+            left: 32px;
+            top: 26px;
+            background: #FFFFFF;
+            box-shadow: 15px -1px 18px 4px #FFFFFF;
+            width: 32px;
+        }
+        .run {
+            animation: run linear 10s infinite;
+        }
+        @keyframes run {
+            10% {
+                transform: translate(-10px,-5px);
+            }
+            20% {
+                transform: translate(10px,-50px);
+            }
+            30% {
+                transform: translate(100px,-5px);
+            }
+            40% {
+                transform: translate(-10px,500px);
+            }
+            50% {
+                transform: translate(100px,50px);
+            }
+            60% {
+                transform: translate(200px,55px);
+            }
+            70% {
+                transform: translate(350px,54px);
+            }
+            80% {
+                transform: translate(410px,405px);
+            }
+            90% {
+                transform: translate(10px,5px);
+            }
+            0%,100% {
+                transform: translate(100px,501px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="th-container">
+
+</div>
+</body>
+<script type="text/javascript">
+    $(function () {
+        function Bubbles() {
+            fns.call(this);
+            this.COUNTS = 1;
+            this.bubbles = [];
+        }
+
+        function Bubble() {
+            this.color = "#0000FF";
+            this.target = $("<div class='th-bubbles run'><span class='th-highlights'></span></div>");
+        }
+
+        function fns() {
+            this.pushBubble = function (b) {
+                b.target.appendTo(".th-container");
+                this.bubbles.push(b);
+            }
+            this.clear = function () {
+                $(".th-container").empty();
+                this.bubles = [];
+            }
+            this.init = function () {
+                for (var i = 0;
+                     i < this.COUNTS;
+                     i++
+                ) {
+                    var bubble = new Bubble();
+                    this.pushBubble(bubble);
+                }
+            }
+        }
+
+
+        var bubbles = new Bubbles();
+        bubbles.init();
+        $(".th-container").click(function (e) {
+            var px = e.pageX, py = e.pageY;
+            var bubble = bubbles.bubbles[0];
+            var os = bubble.target.offset(), x = px - os.left, y = py - os.top;
+            bubble.target.css({
+                transform: "translate(" + x + "px," + y + "px)",
+                top : py+"px",
+                left : px+"px"
+            });
+        });
+        $.each(bubbles.bubbles, function (i, o) {
+
+        });
+    });
+</script>
+</html>
