@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+   <canvas width="1000px" height="600px"></canvas>
+</body>
+<script>
+    var canvas = document.getElementsByTagName("canvas")[0];
+    var ctx = canvas.getContext("2d");
+    var x = 500,x1=700,y1 = 200,y = 200,radius = 5;
+    ctx.beginPath();
+    ctx.fillStyle = "#00FF00";
+    ctx.arc(x,y,radius,0,2*Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.lineWidth = radius/8;
+    ctx.moveTo(x-radius*0.625,y-radius*0.25);
+    ctx.lineTo(x-radius*0.125,y+radius*0.375);
+    ctx.lineTo(x+radius*0.625,y-radius*0.5);
+    ctx.lineJoin="round";
+    ctx.stroke();
+    ctx.beginPath();
+    ctx.fillStyle = "#FF0000";
+    ctx.arc(x1,y1,radius,0,2*Math.PI);
+    ctx.fill();
+    ctx.beginPath();
+    ctx.lineWidth = radius/8;
+    ctx.moveTo(x1-radius*0.6,y1-radius*0.6);
+    ctx.lineTo(x1+radius*0.6,y1+radius*0.6);
+    ctx.moveTo(x1+radius*0.6,y1-radius*0.6);
+    ctx.lineTo(x1-radius*0.6,y1+radius*0.6);
+    ctx.lineJoin="round";
+    ctx.stroke();
+
+</script>
+</html>
