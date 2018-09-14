@@ -59,12 +59,7 @@ function closeTab () {
     }
 };
 
-/**
- * 判断是否存在指定的标签页
- * @param tabMainName
- * @param tabName
- * @returns {Boolean}
- */
+
 function checkTabIsExists(tabMainName, tabName){
     var tab = $("#"+tabMainName+" > #tab_li_"+tabName);
     //console.log(tab.length)
