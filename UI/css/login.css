@@ -1,0 +1,75 @@
+*{
+   box-sizing: border-box;
+}
+html,body{
+   padding: 0px;
+   margin: 0px;
+   height: 100%;
+   width: 100%;
+}
+.thirteen-container {
+   width: 100%;
+   height: 100%;
+}
+.thirteen-container{
+   background: #2e6da4;
+}
+
+.thirteen-login {
+   position: absolute;
+   right: 200px;
+   top: 50%;
+   height: 480px;
+   width: 390px;
+   margin-top: -300px;
+   z-index: 1;
+   background: #FFFFFF;
+   border-radius: 5px;
+   padding: 20px;
+}
+.login-head{
+    margin: 35px 0 15px 20px;
+    font-size: 31px;
+    font-weight: bold;
+}
+
+.login-button{
+   height: 40px;
+   width: 230px;
+   border-radius: 4px;
+   background: #339eFF;
+   border: none;
+   color: #FFFFFF;
+}
+.other-login{
+   position: relative;
+   padding: 3px;
+   width: 100%;
+}
+.other-login .th-title{
+   display: block;
+   position: absolute;
+   left: 50%;
+   margin-left: -25px;
+   font-size: 12px;
+   color: #1b6d85;
+}
+.login-list{
+   list-style:none;
+   overflow: auto;
+   padding-left: 70px;
+   margin-top: 25px;
+}
+
+.login-list li{
+   float: left;
+   margin-left: 20px;
+   margin-top: 10px;
+}
+.Wc-icon,.QQ-icon,.Xl-icon{
+   display: inline-block;
+   height: 45px;
+   width: 45px;
+   border:1px solid #2e6da4;
+   border-radius:50%;
+}
