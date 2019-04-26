@@ -165,6 +165,13 @@
         for (var i = 0; i < 3; i++) {
             ringProgress(i);
         }
+        $.ajax({
+            url:"http://localhost:8080/myRest/firstCtrl/get/1",
+            type:"get",
+            success:function (data) {
+                console.log(data);
+            }
+        });
         loadSouth();
         $("#wel_home").on("click",function(e){
             $("#tabs").hide();
