@@ -2,79 +2,65 @@ function BinaryTree() {
     // 根节点
     this.root = null;
     var that = this;
-    this.insert = function (key) {
-        var node = new Node(key);
+    this.insert = function (node, callback) {
         if (that.root === null) {
             that.root = node;
-            that.scene.add(that.root.nodeC);
-            /*将root节点加入页面dom，并用class定位*/
-           /* that.root.target.appendTo($("body")).addClass("root");*/
         } else {
-            insertNode(that.root, node);
+            insertNode(that.root, node, callback);
         }
     }
 
-    // 构造节点
-    function Node(key) {
-        this.key = key;
-        this.left = null;
-        this.right = null;
-        this.nodeC = Nasoft.Topo.newNode(this);
-        this.target = getTarget.bind(this)();
-    }
 
-    function getTarget() {
-        var t = $("<div></div>");
-        t.text(this.key);
-        return t;
-    }
-
-    function insertNode(p, n) {
+    function insertNode(p, n, callback) {
+        n.elders.push(p);
+        // 需插入的key小于父节点的key
         if (n.key < p.key) {
+            // 父节点没有左节点
             if (p.left === null) {
                 /*构建左节点*/
                 p.left = n;
-                that.scene.add(n.nodeC);
-                let newLink = Nasoft.Topo.newLink(p.nodeC,n.nodeC,"left");
-                that.scene.add(newLink);
+                callback(p, n, 'left')
             } else {
-                insertNode(p.left, n);
+                // 父节点有左节点，将左节点作为父节点继续与插入的节点比较key
+                insertNode(p.left, n, callback);
             }
         } else {
+            /*构建右节点*/
             if (p.right === null) {
                 p.right = n;
-                that.scene.add(n.nodeC);
-                let newLink = Nasoft.Topo.newLink(p.nodeC,n.nodeC,"right");
-                that.scene.add(newLink);
+                callback(p, n, 'right')
             } else {
-                insertNode(p.right, n);
+                insertNode(p.right, n, callback);
             }
         }
     }
 
-    function preOrder(node, callback) {
+
+    /*前序遍历*/
+    var preOrder = function (node, callback) {
         if (node !== null) {
-            callback(node);
+            callback(node, this);
             preOrder(node.left, callback);
             preOrder(node.right, callback);
         }
-    }
-
-    function inOrder(node, callback) {
+    }.bind(this)
+    /*中序遍历*/
+    var inOrder = function (node, callback) {
         if (node !== null) {
             inOrder(node.left, callback);
-            callback(node);
+            callback(node, this);
             inOrder(node.right, callback);
         }
-    }
-
-    function postOrder(node, callback) {
+    }.bind(this)
+    /*后序遍历*/
+    var postOrder = function (node, callback) {
         if (node !== null) {
             postOrder(node.left, callback);
             postOrder(node.right, callback);
-            callback(node);
+            callback(node, this);
         }
-    }
+    }.bind(this)
+
 
     this.preOrder = function (callback) {
         preOrder(that.root, callback);
@@ -87,29 +73,67 @@ function BinaryTree() {
     }
 }
 
+function Node(key) {
+    this.key = key;
+    this.left = null;
+    this.right = null;
+    this.elders = [];
+    this.nodeC = Nasoft.Topo.newNode(this);
+}
+
+var QY = {}
+
 $(function () {
-    var callback = function (node) {
-        let newNode = Nasoft.Topo.newNode(node);
-    }
-    var onBack = function (data) {
-        console.log(data);
-    }
-    var data = [
-       10,6, 1, 4, 7, 5, 2, 8, 11, 45, 3, 9
-    ]
+    /*初始化界面*/
     var canvas = Nasoft.Topo.createCanvas("canvas");
     canvas.width = $("body").width();
     canvas.height = $("body").height();
     var scene = Nasoft.Topo.createScene(Nasoft.Topo.createStage(canvas));
 
-    if (data) {
-        var bt = new BinaryTree();
-        bt.scene = scene;
-        $.each(data, function (i, o) {
-            bt.insert(o);
-        });
-        console.log(bt);
+
+    QY.main = function (str) {
+
+        /*初始数据*/
+        var data = [
+            10, 6, 1, 4, 7, 5, 2, 8, 11, 45, 3, 9
+        ]
+        if (arguments.length !== 0) {
+            data = arguments
+        }
+
+        var angle = Math.PI / 4;
+        var vertical = 120;
+        if (data) {
+            var bt = new BinaryTree(), x = 50, y = 40;
+            for (var i = 0; i < data.length; i++) {
+                data[i] = new Node(data[i])
+                Nasoft.Topo.locations(data[i], (i + 1) * x, y)
+                scene.add(data[i].nodeC);
+            }
+            for (var i = 0; i < data.length; i++) {
+                var o = data[i];
+                if (i === 0) {
+                    Nasoft.Topo.locations(o, $("body").width() / 2, 100);
+                }
+
+                bt.insert(o, function (p, n, text) {
+                    var timer = setTimeout(function () {
+                        let newLink = Nasoft.Topo.newLink(p.nodeC, n.nodeC, text);
+                        /*根据连线的走向，安排节点的对应坐标*/
+                        if (text === "left") {
+                            Nasoft.Topo.arrangeL(p, n, vertical, angle)
+                        }
+                        if (text === "right") {
+                            Nasoft.Topo.arrangeR(p, n, vertical, angle)
+                        }
+                        var timer1 = setTimeout(function () {
+                            scene.add(newLink);
+                            clearTimeout(timer1)
+                        }, 400)
+                        clearTimeout(timer);
+                    }, i*1000)
+                })
+            }
+        }
     }
-  /*  bt.inOrder(callback);
-*/
 });

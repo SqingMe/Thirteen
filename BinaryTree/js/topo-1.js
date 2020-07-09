@@ -8,7 +8,7 @@
     window.Nasoft = Nasoft;
 }(window);
 Nasoft.Topo = {
-
+    count: 0,
     /**
      * 构造一个画布
      * @param tab
@@ -60,10 +60,11 @@ Nasoft.Topo = {
         node.setSize(NODE_SIZE, NODE_SIZE);
         node.alpha = 1;
         node.zIndex = 30;
-        node.fontColor = "32,32,32";//字体颜色(RGB)
-        node.textPosition = "Bottom_Center";
-        node.textOffsetY = 5;//文本偏移量
-        node.font = '12px iphonetopo';
+        node.fillColor = '0,20,255'
+        // node.fontColor = "32,32,32";//字体颜色(RGB)
+        node.textPosition = "Middle_Center";
+        // node.textOffsetY = 5;//文本偏移量
+        node.font = '13pt 微软雅黑';
         console.log('创建节点成功');
         return node;
     },
@@ -80,6 +81,25 @@ Nasoft.Topo = {
         link.fontColor = "0,0,0";
         link.zIndex = 0;
         link.text = text;
+        console.log("link:", link);
         return link;
+    },
+    arrangeL: function (p, n, vertical, angle) {
+
+        x1 = vertical * Math.tan(-angle || -Math.PI / 4)
+        this.locations(n, p.nodeC.x + x1, p.nodeC.y + vertical)
+
+
+    },
+    arrangeR: function (p, n, vertical, angle) {
+
+        x1 = vertical * Math.tan(angle || Math.PI / 4)
+        this.locations(n, p.nodeC.x + x1, p.nodeC.y + vertical)
+
+
+    },
+
+    locations: function (node, x, y) {
+        node.nodeC.setCenterLocation(x, y)
     }
-};
+}
